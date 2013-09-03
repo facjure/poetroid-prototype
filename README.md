@@ -1,4 +1,5 @@
-# Discover Poetry. Read anywhere. Create your favorite collections.
+    / Discover Poetry. Read anywhere. Create your favorite collections /
 
-Built using Frozen Pie
+    Poetics by Facjure.
 
+    Built with Frozen Pie / http://github.com/Facjure/frozen-pie
