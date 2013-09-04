@@ -1,5 +1,7 @@
 recipe/styles/_*
 *.py[cod]
+config.yml
+*.log.md
 
 .build
 out
