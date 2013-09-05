@@ -3,6 +3,7 @@ recipe/styles/_*
 config.yml
 *.log.md
 
+deploy
 .build
 out
 recipe.old
