@@ -1,5 +1,7 @@
-## Discover Poetry, Read Anywhere, Curate Poems Together
+## Discover Poetry Together
 
-Poetics _by_ Facjure.
+Curate, collect, and read poems from the public domain. From any device.
+
+For free.
 
 Built with [Frozen Pie](http://github.com/Facjure/frozen-pie)
