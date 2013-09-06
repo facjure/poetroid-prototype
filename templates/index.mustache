@@ -7,6 +7,8 @@
         <meta name="description" content="Handcrafted Resumes, delivered anywhere">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css"/>
+
         <style type="text/css">
             {{{ style_sheet }}}
         </style>
@@ -33,10 +35,6 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
               })();
 
-             /* Code blocks */
-             $('pre').each(function (i, e) {
-                hljs.highlightBlock(e);
-              });
         </script>
 
     </head>
@@ -58,19 +56,21 @@
 
         <div id="wrapper">
             <article class="content">
-                <article class="content">
-                    <!-- logo wrapper is just for Firefox... sigh -->
-                    <div class="logo-wrapper"><h1 class="logo">&#123;&#955;&#125;</h1></div>
 
-                    <form id="search" action="#/search" method="GET">
-                        <input type="text" name="query" />
-                        <input type="submit" value="Search" />
-                    </form>
+                <div class="logo-wrapper"><h1 class="logo">&#123;&#955;&#125;</h1></div>
+                
+                <form id="search-form" action="#/search"
+                      method="GET">
+                  <div id="search">
+                    <input type="text" name="query"/>
+                  </div>
+                  <div id="submit-button">
+                    <input type="submit" value="Search" />
+                  </div>
+                </form>
 
-                    <!-- Main Content -->
-                    <div id="main" />
+              <div id="main"/>
 
-                 </article>
              </article>
 
             <footer>

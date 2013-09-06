@@ -67,7 +67,7 @@ a img {
   padding-bottom: 10px;
 }
 .content {
-  max-width: 700px;
+  max-width: 1280px;
   margin: 0 auto;
   padding:32px 0 50px;
 }
@@ -152,16 +152,30 @@ pre, code {
 
 .post { white-space : pre }
 
-#search {
-    display: inline;
-    padding-left: 1.5em;
+#search-form {
+    width: 80%;
+    margin: 0 auto;
 }
 
 #search {
-  float: right;
+    font-size: 1.1em;
+    width: 23em;
+    margin: 0 auto;
 }
 
-#search input {
+#search input[type="text"] {
+    width: 23em;
+}
+
+#submit-button {
+    width: 3em;
     font-size: 0.9em;
+    margin: 23px auto;
 }
+
+#main {
+    width:80%;
+    margin: 0 auto;
+}
+
 

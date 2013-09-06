@@ -12,9 +12,9 @@ def by_author(text):
     renderer = pystache.Renderer(file_encoding="utf-8", string_encoding="utf-8")
     authors = []
     for poem in contents:
-        author = poem.get("author", "Anonymous")
+        author = poem.get("author", "Unknown")
         if author is None:
-            author = "Anonymous"
+            author = "Unknown"
 
         matches = filter(lambda x: x["name"] == author, authors)
         
