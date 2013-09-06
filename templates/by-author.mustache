@@ -4,7 +4,12 @@ _type: dynamic
 <ol>
 {{#by_author}}
    {{#authors}} 
-      <li><span><a href="{{link_name}}"><span class="post-title">{{name}}</a></span><br/>
+      <li><span><a href="{{link_name}}">
+            <span class="post-title">
+              {{#name}}{{name}}{{/name}}
+              {{^name}}Unknown{{/name}}
+            </span></a>
+          <br/>
     {{/authors}}
 {{/by_author}}
 </ol>

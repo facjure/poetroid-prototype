@@ -1,6 +1,7 @@
 recipe/styles/_*
 *.py[cod]
 config.yml
+config.me.yml
 *.log.md
 
 deploy

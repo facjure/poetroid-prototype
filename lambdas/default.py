@@ -1,13 +1,6 @@
 import pystache
 import urllib
 
-def hello_world(text):
-    return "Hello %s from Frozen Pie" % text
-
-def all_poems(text):
-    renderer = pystache.Renderer(file_encoding="utf-8", string_encoding="utf-8")
-    return renderer.render(text, {"posts": contents })
-
 def by_author(text):
     renderer = pystache.Renderer(file_encoding="utf-8", string_encoding="utf-8")
     authors = []
@@ -24,3 +17,4 @@ def by_author(text):
 
     authors.sort(key= lambda d : d.get("name"))
     return renderer.render(text,{"authors": authors})
+
