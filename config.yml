@@ -3,7 +3,7 @@ recipe_root: /Users/priyatam/Dev/github/facjure/poetics
 lib: /Users/priyatam/Dev/github/facjure/poetics/lib
 
 first_page: blog
-default_template: post_plain.mustache
+default_template: poem.mustache
 
 title: Discover Poetry Together
 
