@@ -1,8 +1,9 @@
 content: /Users/priyatam/Dev/github/facjure/poems
 recipe_root: /Users/priyatam/Dev/github/facjure/poetics
+lib: /Users/priyatam/Dev/github/facjure/poetics/lib
 
 first_page: blog
 default_template: post_plain.mustache
 
-title: Curate Poems Together, Discover Poetry, Read Anywhere
+title: Curate Poems Together
 
