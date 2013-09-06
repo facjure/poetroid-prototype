@@ -44,8 +44,9 @@
         <nav id="main-nav">
           <!-- &nbsp; so it doesn't wrap -->
 
-          <h1 id="logo"><a href="/">{{ title }}</a></h1></a>
+          <h1 id="logo"><a href="/#">{{ title }}</a></h1></a>
           <ul>
+            <li><a href="/#">Search</a> </li>
             <li><a href="#/by-author">By Author</a> </li>
             <li><a href="mailto:priyatam@facjure.com">Contact</a> </li>
           </ul>
@@ -57,15 +58,13 @@
         <div id="wrapper">
             <article class="content">
 
-                <div class="logo-wrapper"><h1 class="logo">&#123;&#955;&#125;</h1></div>
-                
                 <form id="search-form" action="#/search"
                       method="GET">
                   <div id="search">
                     <input type="text" name="query"/>
                   </div>
                   <div id="submit-button">
-                    <input type="submit" value="Search" />
+                    <input type="submit" class="search-button" value="Search" />
                   </div>
                 </form>
 
@@ -74,8 +73,7 @@
              </article>
 
             <footer>
-               <p>&copy; Fac.jure LLC. 2013 | Made in Boston and built with <a href="https://github.com/Facjure/frozen-pie">Frozen &pi;</a>
-
+               <p>&copy; Fac.jure LLC. 2013 | Built with <a href="https://github.com/Facjure/frozen-pie">Frozen &pi;</a>
             </footer>
         </div>
 
