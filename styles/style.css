@@ -60,8 +60,13 @@ code {
 }
 
 .search-meta {
-  padding: 10px;
-  margin: 10px auto;
+  padding: 5px;
+  margin: 10% auto;
+  text-align:center;
+}
+
+.center {
+  text-align:center;
 }
 
 #meta {
