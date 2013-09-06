@@ -58,3 +58,8 @@ pre .constant {
 code {
   font-size: 80%;
 }
+
+.search-meta {
+  padding: 10px;
+  margin: 10px auto;
+}
