@@ -1,82 +1,39 @@
 <!DOCTYPE html>
- <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ title }}</title>
-        <meta name="description" content="Handcrafted Resumes, delivered anywhere">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poems from the Public Domain">
+    <meta name="author" content="Facjure">
 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css"/>
+    <title> {{ title }}</title>
 
-        <style type="text/css">
-            {{{ style_sheet }}}
-        </style>
+    {{> styles}}
+    {{> scripts}}
+  </head>
 
+  <body>
+    <!-- Sammjs wraps all page content here -->
+    <div id="wrap">
+      {{> nav}}
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/sammy.js/0.7.4/sammy.min.js"></script>
-        <script>
-            /* Frozen Pie */
-            var data = {{{ json_data }}};
-            var config = {{{ config }}};
-
-            {{{ script }}}
-
-            /* Google Analytics */
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-41268790-1']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-              })();
-
-        </script>
-
-    </head>
-
-    <body>
-
-        <nav id="main-nav">
-          <!-- &nbsp; so it doesn't wrap -->
-
-          <h1 id="logo"><a href="">{{ title }}</a></h1></a>
-          <ul>
-            <li><a href="">Search</a> </li>
-            <li><a href="#/all">All Poems</a> </li>
-            <li><a href="#/by-author">By Author</a> </li>
-            <li><a href="mailto:priyatam@facjure.com">Contact</a> </li>
-          </ul>
-          <br class="clear">
-        </nav>
-
-        <header id="main-header"/>
-
-        <div id="wrapper">
-            <article class="content">
-
-                <form id="search-form" action="#/search"
-                      method="GET">
-                  <div id="search">
-                    <input type="text" name="query"/>
-                  </div>
-                  <div id="submit-button">
-                    <input type="submit" class="search-button" value="Search" />
-                  </div>
-                </form>
-
-              <div id="main"/>
-
-             </article>
-
-            <footer>
-               <p>&copy; Fac.jure LLC. 2013 | Built with <a href="https://github.com/Facjure/frozen-pie">Frozen &pi;</a>
-            </footer>
+      <div class="container">
+        <div class="page-header">
+          <h1>{{ title }}</h1>
+          <p class="lead">Curate, collect, and read poems from the public domain. From any device.</p>
         </div>
 
-    </body>
+        {{> search}}
+
+        <div id="main">
+            This content will be replaced dynamically
+        </div>
+
+      </div>
+
+    </div>
+
+    {{> footer}}
+
+  </body>
 </html>
