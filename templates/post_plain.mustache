@@ -1,5 +1,5 @@
 <header>
-    <h2>{{#title}}{{title}}{{/title}}{{^title}}Untitled{{/title}}        
+    <h2>{{#title}}{{title}}{{/title}}{{^title}}Untitled{{/title}}
         <em>by</em>
         {{#author}}{{author}}{{/author}}{{^author}}Unknown{{/author}}
         </h2>
@@ -7,18 +7,24 @@
 <article class='post' style="white-space: pre-wrap">{{{ body }}}</article>
 <hr>
 
-<button id="show-meta">Show metadata</button>
-<div id="meta" class="hide">
-{{#translator}}    translator: {{translator}}{{/translator}}
-    author: {{author}}
-    title: {{title}}
-    gender: {{gender}}
-    curator: {{curator}}
-    year: {{year}}
-    country: {{country}}
-{{#type}}    type: {{type}}{{/type}}
-    tags: 
-     {{#tags}}
-     - {{.}}
-     {{/tags}}
+<button id="show-meta" type="submit" class="btn btn btn-primary btn-sm">show metadata</button>
+<button id="show-tags" type="submit" class="btn btn btn-primary btn-sm">show tags</button>
+
+<div id="meta" class="panel panel-default hide">
+    {{#type}} type: {{type}}{{/type}}
+    {{#translator}} translator: {{translator}}{{/translator}}
+        author: {{author}}
+        title: {{title}}
+        gender: {{gender}}
+        curator: {{curator}}
+        year: {{year}}
+        country: {{country}}
+</div>
+
+<div id="tags" class="panel panel-default hide">
+    <ul class="list-group">
+        {{#tags}}
+            <li class="list-group-item">{{.}}</li>
+        {{/tags}}
+    </ul>
 </div>
