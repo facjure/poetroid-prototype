@@ -179,4 +179,16 @@ pre, code {
     margin: 0 auto;
 }
 
+#meta {
+    white-space: pre;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 

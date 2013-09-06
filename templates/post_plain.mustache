@@ -5,3 +5,20 @@
         </h2>
 </header>
 <article class='post' style="white-space: pre-wrap">{{{ body }}}</article>
+<hr>
+
+<button id="show-meta">show metadata</button>
+<div id="meta" class="hide">
+{{#translator}}    type: {{translator}}{{/translator}}
+    author: {{author}}
+    title: {{title}}
+    gender: {{gender}}
+    curator: {{curator}}
+    year: {{year}}
+    country: {{country}}
+{{#type}}    type: {{type}}{{/type}}
+    tags: 
+     {{#tags}}
+     - {{.}}
+     {{/tags}}
+</div>
