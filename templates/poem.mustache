@@ -11,19 +11,23 @@
 <button id="show-tags" type="submit" class="btn btn btn-primary btn-sm">show tags</button>
 
 <div id="meta" class="panel panel-default hide">
-    {{#type}} type: {{type}}{{/type}}
-    {{#translator}} translator: {{translator}}{{/translator}}
-    author: {{author}}
-    gender: {{gender}}
-    curator: {{curator}}
-    year: {{year}}
-    country: {{country}}
+  <ul class="list-group">
+  {{#type}}<li class="list-group-item">type: {{type}}</li>{{/type}}
+  {{#translator}}<li class="list-group-item">translator: {{translator}} </li>{{/translator}}
+  {{#author}}<li class="list-group-item">author: {{author}}</li>{{/author}}
+  {{#gender}}<li class="list-group-item">gender: {{gender}}</li>{{/gender}}
+  {{#curator}}<li class="list-group-item">curator: {{curator}}</li>{{/curator}}
+  {{#year}}<li class="list-group-item">year: {{year}}</li>{{/year}}
+  {{#country}}<li class="list-group-item">country: {{country}}</li>{{/country}}
+  </ul>
 </div>
 
 <div id="tags" class="panel panel-default hide">
     <ul class="list-group">
         {{#tags}}
-            <li class="list-group-item">{{.}}</li>
+            <li class="list-group-item">
+              <a href="#/search?query=tag%3A{{.}}">{{.}}</a>
+            </li>
         {{/tags}}
     </ul>
 </div>
