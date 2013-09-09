@@ -76,3 +76,12 @@ code {
 .show {
     display: block;
 }
+
+#search-descr {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  color: grey;
+  font-size: small;
+  font-style: italic;
+}
