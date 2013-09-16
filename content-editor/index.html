@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="http:////netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<link href="https://rawgithub.com/usablica/widearea/master/widearea.css" media="all" rel="stylesheet" type="text/css">
+<script src="https://rawgithub.com/usablica/widearea/master/widearea.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://rawgithub.com/desfrenes/base64.js/master/base64.js"></script>
+<script src="http://underscorejs.org/underscore.js"></script>
+
+<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
+<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sammy.js/0.7.4/sammy.min.js"></script>
+
+<script src="https://rawgithub.com/michael/github/master/github.js"></script>
+<script src="js/main.js"></script>
+
+<!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+
+<div id="wrap">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="">Poetics</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="#/page/about.md">About</a></li>
+          <li><a href="mailto:priyatam@facjure.com">Contact</a></li>
+          <li class="dropdown">
+          <a data-target="#" href="#" class="dropdown-toggle" data-toggle="dropdown">Search <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="menu-item"><a href="#/by-author">By Author</a></li>
+            <li class="divider"></li>
+            <li class="menu-item"><a href="#/all">By Title</a></li>
+            <li class="divider"></li>
+            <li class="menu-item"><a href="">By Metadata</a></li>
+          </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+            <li><button id="login" class="btn btn-primary">login</button></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div id="main">
+
+      <div id="commit">
+        <div id="search">
+          <form action="#/search" method="POST">
+            <input type="text" id="q" name="q"/>
+            <input type="submit" value="Search"/>
+          </form>
+        </div>
+        <div id="commit-files">
+        </div>
+      </div>
+
+      <div id="file">
+        <input type="text" name="file-name" id="file-name">
+        <button id="save-poem">Save</button><br/>
+        <textarea id="content" data-widearea="enable">
+        </textarea>
+        <script>
+          wideArea();
+        </script>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted credit"> &copy; Fac.jure LLC. 2013. Built with <a href="https://github.com/Facjure/frozen-pie">Frozen &pi;</a>.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
