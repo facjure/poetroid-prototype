@@ -29,7 +29,7 @@ textarea, input, button { outline: none; }
 
 #editing-area {
   margin-top: 15px;
-  font-family : 'Lato', Arial;
+  font-family : inherit;
   font-size: 20px;
   font-weight: 300;
   height: 100%;
@@ -57,7 +57,7 @@ textarea, input, button { outline: none; }
 }
 
 button {
-  font-family : Arial;
+  font-family : inherit;
   color: #F1F1F1;
   font-size: 18px;
   background-color: #476ff1;
@@ -72,10 +72,12 @@ button {
 }
 
 #editor-search {
+  font-family: inherit;
   width: 100%;
 }
 
 #buttons {
+  font-family: inherit;
   padding-top: 3%;
 }
 
@@ -2918,7 +2920,7 @@ function editor_load () {
 
             log(user)
 
-            window.REPO = window.GH.getRepo("sreeharsha-m", "test")
+            window.REPO = window.GH.getRepo("Facjure", "poems")
 
             window.REPO.getTree('master?recursive=true', function(err, tree) {
                 window.LAST_COMMIT = tree
@@ -2942,8 +2944,23 @@ function editor_load () {
         }
     })
 
+    $("#editing-area").keydown(function (e) {
+        if (e.which == 9) {
+            e.preventDefault(); 
+            var start = $(this).get(0).selectionStart;
+            var end = $(this).get(0).selectionEnd;
+            $(this).val($(this).val().substring(0, start)
+                + "    "
+                + $(this).val().substring(end));
+
+           $(this).get(0).selectionStart = 
+           $(this).get(0).selectionEnd = start + 4;
+        }
+
+    })
+
     $("#editor-search").keypress(function (e) {
-        if (e.which == 13) {
+                if (e.which == 13) {
             e.preventDefault()
             get_file()
         }
@@ -3000,7 +3017,11 @@ function editor_load () {
                     $("#status").html("save error")
                 }
             })
-        }, 1500); // Github bug
+        }, 2000); // Github bug
+
+        window.REPO.getTree('master?recursive=true', function(err, tree) {
+            window.LAST_COMMIT = tree
+        })
 
     })
 
