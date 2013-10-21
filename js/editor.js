@@ -152,7 +152,7 @@ function editor_load () {
 
             })
 
-            $("#login").html("logout")
+            $("#login").html("Logout")
             edit_new_file()
 
         }
@@ -182,11 +182,11 @@ function editor_load () {
 
     $("#login").click(function () {
 
-          if ($(this).html() === "logout")  {
+          if ($(this).html() === "Logout")  {
               auth.logout()
               log("logging out")
-              $("#login").html("login")
-              $("#status").html("logged out")
+              $("#login").html("Login")
+              $("#status").html("Logged out")
               $("#editing-area").val("")
           }
           else {
