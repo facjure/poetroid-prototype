@@ -29,7 +29,7 @@ function edit_new_file () {
 
 function preview (e) {
 
-    var yaml_status = "---\n"
+    var yaml_status = "<div id='results'>"
 
     var text = $("#editing-area").val()
     var text_parts = get_text_parts(text)
@@ -39,19 +39,19 @@ function preview (e) {
 
     try {
         yaml_ds = get_yaml_ds(text_parts[0])
-        yaml_status += "Metadata: OK\n"
+        yaml_status += "Metadata: OK<br>"
         $("#status").html("editing")
     }
     catch (YamlParseException) {
         $("#status").html("Metadata Error " + YamlParseException.message)
-        yaml_status += "Metadata: NOT OK\n---\n"
+        yaml_status += "Metadata: NOT OK<br>"
         $("#preview").html(yaml_status)
         return
     }
 
     path = get_path(yaml_ds)
 
-    yaml_status += "Filename: " + path + "\n---\n"
+    yaml_status += "Filename: " + path + "</div>"
     $("#preview").html(yaml_status + text_parts[1])
 }
 
@@ -245,4 +245,3 @@ function editor_load () {
     $("#editing-area").keyup(preview)
 
 }
-
