@@ -14,6 +14,7 @@
   color: #DE5641;
   font-size: 16px;
   margin-top: 5px;
+  min-height: 22px;
 }
 
 textarea, input, button { outline: none; }
@@ -21,7 +22,7 @@ textarea, input, button { outline: none; }
 #editing-area {
   margin-top: 15px;
   font-family : inherit;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   white-space: pre;
   height: 100%;
@@ -49,9 +50,9 @@ textarea, input, button { outline: none; }
 }
 
 #preview {
-  font-family : inherit;
+  font-family : 'Alegreya', serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 5%;
   padding-left: 5%;
   width: 100%;
@@ -125,7 +126,11 @@ button {
 #results {
   white-space: normal;
   background-color: #e6e6e6;
-  padding: 2%;
+  padding: 4%;
+  left: -7%;
+  position: relative;
+  width: 107%;
+  margin-bottom: 3%;
 }
 
 .tt-suggestion.tt-is-under-cursor {
@@ -134,7 +139,6 @@ button {
 }
 
 .tt-suggestion {
-  padding: 3px 20px;
   font-size: 18px;
   line-height: 24px;
 }

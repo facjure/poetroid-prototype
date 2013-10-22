@@ -61,7 +61,12 @@ function get_yaml_ds(text) {
 
     try {
         yaml_ds = YAML.parse(text)
-        log(yaml_ds)
+        if (yaml_ds.author && yaml_ds.author.length > 1 && yaml_ds.title && yaml_ds.title.length > 1) {
+            log(yaml_ds)
+        }
+        else {
+            throw YamlParseException
+        }
     }
     catch (YamlParseException) {
         throw YamlParseException
@@ -100,8 +105,8 @@ function clean_name (name) {
     return clean_name
 }
 
-function get_file () {
-    var path = $("#editor-search").val()
+function get_file (e, datum) {
+    var path = datum.name
     $("#status").html("loading " + path)
     log(path)
     window.REPO.read('master', path, function(err, data) {
@@ -116,6 +121,7 @@ function editor_load () {
 
     $.ajaxSetup({ cache: false })
     var firebaseRef = new Firebase("https://tesjure.firebaseio.com")
+    window.CURRENT_PATH = ""
 
     var auth = new FirebaseSimpleLogin(firebaseRef, function(error, user) {
         if (error) {
@@ -141,12 +147,17 @@ function editor_load () {
                 log(window.LAST_COMMIT)
 
                 var all_paths = _.map(tree, function (e) {
-                   return e.path
+                   var value = e.path
+                   var name = e.path.replace(/\..+$/, "").replace(/-/g, " ")
+                   return { "value": name, "name": value }
                 })
+
+                var search_template = Mustache.compile("<p data-val='{{name}}'>{{value}}</p>")
 
                 $('#editor-search').typeahead({
                     name: "file-names",
                     limit: 10,
+                    template: search_template,
                     local: all_paths
                 }).bind("typeahead:selected", get_file)
 
@@ -167,18 +178,11 @@ function editor_load () {
                 + "    "
                 + $(this).val().substring(end));
 
-           $(this).get(0).selectionStart = 
+           $(this).get(0).selectionStart = start + 4;
            $(this).get(0).selectionEnd = start + 4;
         }
 
     })
-
-    $("#editor-search").keypress(function (e) {
-                if (e.which == 13) {
-            e.preventDefault()
-            get_file()
-        }
-     })
 
     $("#login").click(function () {
 
