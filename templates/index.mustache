@@ -24,72 +24,15 @@
   </head>
 
   <body>
-<script type="text/text" id="search-template">
-  <div class="page-header center">
-    <h1>{{ title }}</h1>
-    <p class="lead center">Curate, collect, and read poems from the public domain. From any device.</p>
-  </div>
-
-<form class="form-inline search-meta" role="form" action="#/search" method="GET" >
-  <div class="form-group">
-    <input type="text" class="form-control input-lg" name="query" id="query" placeholder="Search by Metadata">
-  </div>
-  <button type="submit" class="btn btn btn-primary btn-lg">Search</button>
-
-  <div id="search-descr">
-      Search Examples: Nature, author: wilde, tag: love
-  </div>
-</form>
-</script>
-<script type="text/text" id="editor-template">
-<div id="editor-container">
-
-  <div id="more-controls">
-      <span id="file-search">
-      <input id="editor-search" type="text" data-provide="typeahead">
-      </span>
-  </div>
-
-  <div id="editor">
-
-    <div id="status">
-    </div>
-
-    <textarea id="editing-area"></textarea>
-
-    <div id="buttons">
-      <button id="save" class="btn btn-primary">save</button>
-      <button id="new" class="btn btn-primary">new</button>
-    </div>
-
-  </div>
-
-  <div id="preview-area">
-
-    <div id="preview">
-    </div>
-
-  </div>
-
-</div>
-</script>
-
 
     <!-- Sammjs wraps all page content here -->
     <div id="wrap">
       {{> nav}}
 
       <div class="container">
-
-          <div id="search">
-          </div>
-
         <div id="main">
-
         </div>
-
       </div>
-
     </div>
 
     {{> footer}}

@@ -24,6 +24,10 @@ body {
   padding: 0 0 60px;
 }
 
+#main {
+ margin-top: 50px;
+}
+
 #main, #container {
   height: 100%;
 }
@@ -89,5 +93,4 @@ code {
   font-size: small;
   font-style: italic;
 }
-
 
