@@ -8,12 +8,22 @@ _type: dynamic
 
 <form class="form-inline search-meta" role="form" action="#/search" method="GET" >
   <div class="form-group">
-    <input type="text" class="form-control input-lg" name="query" id="query" placeholder="Search by Metadata">
+    <input type="text" name="query" id="query" placeholder="Search by Metadata">
+    <button type="submit" id="query-submit" class="btn btn-primary btn-lg">Search</button>
   </div>
-  <button type="submit" class="btn btn btn-primary btn-lg">Search</button>
 
   <div id="search-descr">
-      Search Examples: Nature, author: wilde, tag: love
+      Ex: nature, author: wilde, tag: love
   </div>
 </form>
+
+</div>
+
+{{#stats}}
+<div id="stats">
+  <div>Total Poems : {{poems_count}}</div>
+  <div>Total Authors: {{authors_count}}</div>
+</div>
+{{/stats}}
+
 

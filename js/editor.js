@@ -25,11 +25,14 @@ tags: \n\
 function edit_new_file () {
     $("#status").html("new file")
     $("#editing-area").val(default_text)
+    window.CURRENT_PATH = ""
+    $("#preview").html("")
+
 }
 
 function preview (e) {
 
-    var yaml_status = "<div id='results'>"
+    var yaml_status = ""
 
     var text = $("#editing-area").val()
     var text_parts = get_text_parts(text)
@@ -42,17 +45,17 @@ function preview (e) {
         yaml_status += "Metadata: OK<br>"
         $("#status").html("editing")
     }
-    catch (YamlParseException) {
-        $("#status").html("Metadata Error " + YamlParseException.message)
-        yaml_status += "Metadata: NOT OK<br>"
-        $("#preview").html(yaml_status)
+    catch (e){
+        yaml_status += "Metadata: NOT OK " + e.message + "<br>"
+        $("#yaml-results").html(yaml_status)
         return
     }
 
     path = get_path(yaml_ds)
 
-    yaml_status += "Filename: " + path + "</div>"
-    $("#preview").html(yaml_status + text_parts[1])
+    yaml_status += "Filename: " + path
+    $("#yaml-results").html(yaml_status)
+    $("#preview").html(text_parts[1])
 }
 
 
@@ -61,15 +64,15 @@ function get_yaml_ds(text) {
 
     try {
         yaml_ds = YAML.parse(text)
-        if (yaml_ds.author && yaml_ds.author.length > 1 && yaml_ds.title && yaml_ds.title.length > 1) {
+        if (yaml_ds.author && yaml_ds.author.length >= 1 && yaml_ds.title && yaml_ds.title.length >= 1) {
             log(yaml_ds)
         }
         else {
-            throw YamlParseException
+            throw new Error("Title and Author should be present")
         }
     }
-    catch (YamlParseException) {
-        throw YamlParseException
+    catch (e) {
+        throw e
     }
 
     return yaml_ds
@@ -119,6 +122,9 @@ function get_file (e, datum) {
 
 function editor_load () {
 
+    $("#yaml-results").height($("#more-controls").height() + "px")
+    $("#preview").height($("#editing-area").height() + "px")
+
     $.ajaxSetup({ cache: false })
     var firebaseRef = new Firebase("https://tesjure.firebaseio.com")
     window.CURRENT_PATH = ""
@@ -146,11 +152,14 @@ function editor_load () {
                 window.LAST_COMMIT = tree
                 log(window.LAST_COMMIT)
 
-                var all_paths = _.map(tree, function (e) {
-                   var value = e.path
-                   var name = e.path.replace(/\..+$/, "").replace(/-/g, " ")
-                   return { "value": name, "name": value }
-                })
+                if (!window.all_paths) {
+
+                    window.all_paths = _.map(tree, function (e) {
+                    var value = e.path
+                    var name = e.path.replace(/\..+$/, "").replace(/-/g, " ")
+                    return { "value": name, "name": value }
+                    })
+                }
 
                 var search_template = Mustache.compile("<p data-val='{{name}}'>{{value}}</p>")
 
@@ -158,7 +167,7 @@ function editor_load () {
                     name: "file-names",
                     limit: 10,
                     template: search_template,
-                    local: all_paths
+                    local: window.all_paths
                 }).bind("typeahead:selected", get_file)
 
             })

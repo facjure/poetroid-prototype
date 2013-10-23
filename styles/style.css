@@ -13,6 +13,8 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 
+textarea, input, button { outline: none; }
+
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
@@ -70,7 +72,7 @@ code {
 .search-meta {
   padding: 5px;
   margin: 5% auto;
-  text-align:center;
+  width: 55%;
 }
 
 .center {
@@ -86,11 +88,35 @@ code {
 }
 
 #search-descr {
-  width: 30%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   color: grey;
   font-size: small;
   font-style: italic;
 }
 
+#query {
+  font-family: inherit;
+  height: 40px;
+  padding: 1%;
+}
+
+.twitter-typeahead, #query {
+  width: 512px;
+}
+
+.tt-hint {
+  height: 40px;
+  color: lightgrey;
+  padding: 1%;
+}
+
+#query-submit {
+  position: relative;
+  top: 5px;
+}
+
+#stats {
+  font-size: 28px;
+  text-align: center;
+}
