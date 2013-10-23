@@ -1621,7 +1621,7 @@ YamlParser.prototype =
     }
 
     // remove start of the document marker (---)
-    regex = /^\-\-\-.*?\n/;
+    regex = /^\-\-\-\s*/;
     if ( regex.test(value) )
     {
       trimmedValue = value.replace(regex, '');
