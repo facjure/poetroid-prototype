@@ -89,6 +89,8 @@ button {
 
 #editor-search {
   font-family: inherit;
+  padding: 5px;
+  height: 40px;
   width: 100%;
 }
 
@@ -144,5 +146,6 @@ button {
 }
 
 .tt-hint {
+  height: 40px;
   color: lightgrey;
 }
