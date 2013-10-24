@@ -1,23 +1,27 @@
 ---
 _type: dynamic
 ---
-<div class="page-header center">
+<div class="page-header text-center">
     <h1>Discover Poetry Together</h1>
-    <p class="lead center">Curate, collect, and read <span id="poems-count"></span> poems from the public domain. From any device.</p>
+    <p class="lead text-center">Curate, collect, and read poems from the public domain. From any device.</p>
 </div>
 
-<form class="form-inline search-meta" role="form" action="#/search" method="GET" >
-  <div class="form-group">
-    <input type="text" name="query" id="query" placeholder="Search by Metadata">
-    <button type="submit" id="query-submit" class="btn btn-primary btn-lg">Search</button>
-  </div>
-
-  <div id="search-descr">
-      Ex: nature, author: wilde, tag: love
+<form class="form-inline" id="home-search" role="form" action="#/search" method="GET">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-3">
+      <input type="text" name="query" id="query" class="form-control" placeholder="Search by Metadata">
+    </div>
+    <div class="col-md-2 no-padding">
+      <button type="submit" id="query-submit" class="btn btn-primary">Search</button>
+    </div>
+    </div>
+    <div class="col-md-8 col-md-offset-4">
+      <p class="help-block">
+        Ex: nature, author: wilde, tag: love
+      </p>
+    </div>
   </div>
 </form>
-
-</div>
 
 {{#stats}}
 <div id="stats">

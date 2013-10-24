@@ -4,6 +4,17 @@
 
 /* Sticky footer styles
 -------------------------------------------------- */
+textarea, input, button { outline: none; }
+
+button {
+  font-family : inherit;
+  font-size: 18px;
+  background-color: transparent;
+  color: #476ff1;
+  border: none;
+  border-bottom: 1px dashed #000;
+  padding: 0px;
+}
 
 html,
 body {
@@ -40,21 +51,10 @@ textarea, input, button { outline: none; }
   background-color: #f5f5f5;
 }
 
-pre {
-  display: block;
-  padding: 10px;
-  background: #272822;
-  color: #ddd;
-  overflow: auto;
-  font-size: 15px;
-}
-pre .constant {
-  color:#66d9ef;
-}
-
 #wrap > .container {
   padding: 60px 15px 0;
 }
+
 .container .credit {
   margin: 20px 0;
 }
@@ -65,58 +65,62 @@ pre .constant {
   text-align: center;
 }
 
-code {
-  font-size: 80%;
-}
-
-.search-meta {
-  padding: 5px;
-  margin: 5% auto;
-  width: 55%;
-}
-
-.center {
-  text-align:center;
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-#search-descr {
-  margin: 0 auto;
-  text-align: left;
-  color: grey;
-  font-size: small;
-  font-style: italic;
-}
-
-#query {
-  font-family: inherit;
-  height: 40px;
-  padding: 1%;
-}
-
-.twitter-typeahead, #query {
-  width: 512px;
-}
-
-.tt-hint {
-  height: 40px;
-  color: lightgrey;
-  padding: 1%;
-}
-
-#query-submit {
-  position: relative;
-  top: 5px;
-}
-
 #stats {
+  margin-top: 150px;
   font-size: 28px;
   text-align: center;
 }
+
+.help-block {
+  font-size: smaller;
+}
+
+#editing-area {
+  margin-top: 15px;
+  font-family : inherit;
+  font-size: 18px;
+  font-weight: 300;
+  white-space: pre;
+  height: 760px;
+  width: 100%;
+  border: none;
+  overflow: auto;
+  padding-left: 2%;
+  border: 1px #e6e6e6 solid;
+  -webkit-border-radius: 15px 15px 15px 15px; 
+  -moz-border-radius: 15px 15px 15px 15px;
+  -o-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#query {
+  width: 460px;
+}
+
+#editor-search {
+  width: 460px;
+}
+
+#preview {
+  font-family : 'Alegreya', serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 5%;
+  margin-top: 15px;
+  width: 100%;
+  height: 760px;
+  white-space: pre;
+  overflow: auto;
+  border: 1px #e6e6e6 solid;
+  background-color: white;
+  -webkit-border-radius: 15px 15px 15px 15px; 
+  -moz-border-radius: 15px 15px 15px 15px;
+  -o-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.no-padding {
+  padding-left: 0;
+}
+
+

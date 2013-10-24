@@ -2,36 +2,39 @@
 _type: dynamic
 ---
 
-<div id="editor-container">
+<div class="container" style="margin-bottom: 30px;">
 
-  <div id="editor">
-
-    <div id="more-controls">
-      <span id="file-search">
+  <div class="row">
+    <div class="row">
+      <div class="col-md-5">
         <input id="editor-search" type="text" data-provide="typeahead">
-      </span>
-      <div id="status"> </div>
-      <div id="new-button">
+      </div>
+    </div>
+    <div class="row" style="margin-top: 5px">
+      <div class="col-md-5">
+        <span id ="status" class="label label-info"></span>
+      </div>
+      <div class="col-md-1">
         <button id="new">new</button>
       </div>
-     </div>
-
-    <textarea id="editing-area"></textarea>
-
-    <div id="save-button">
+      <div class="col-md-6">
+        <span id ="filename" class="label label-info"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <textarea id="editing-area"></textarea>
+      </div>
+      <div class="col-md-6">
+        <div id="preview">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-md-offset-5">
         <button id="save">save</button>
+      </div>
     </div>
-
-  </div>
-
-  <div id="preview-area">
-
-    <div id="yaml-results">
-    </div>
-
-    <div id="preview">
-    </div>
-
   </div>
 
 </div>
