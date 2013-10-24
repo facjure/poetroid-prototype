@@ -18,13 +18,17 @@ button {
 
 html,
 body {
-  font-family: 'Oxygen', Vollkorn, sans-serif;
+  font-family: Vollkorn, 'Oxygen', sans-serif;
   font-size: 18px;
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
 
 textarea, input, button { outline: none; }
+
+.search {
+  padding: 50px 50px 50px 50px;
+}
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -67,8 +71,11 @@ textarea, input, button { outline: none; }
 
 #stats {
   margin-top: 150px;
-  font-size: 28px;
-  text-align: center;
+  border: 1px #e6e6e6 solid;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -o-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .help-block {
@@ -87,7 +94,7 @@ textarea, input, button { outline: none; }
   overflow: auto;
   padding-left: 2%;
   border: 1px #e6e6e6 solid;
-  -webkit-border-radius: 15px 15px 15px 15px; 
+  -webkit-border-radius: 15px 15px 15px 15px;
   -moz-border-radius: 15px 15px 15px 15px;
   -o-border-radius: 15px 15px 15px 15px;
   border-radius: 15px 15px 15px 15px;
@@ -113,7 +120,7 @@ textarea, input, button { outline: none; }
   overflow: auto;
   border: 1px #e6e6e6 solid;
   background-color: white;
-  -webkit-border-radius: 15px 15px 15px 15px; 
+  -webkit-border-radius: 15px 15px 15px 15px;
   -moz-border-radius: 15px 15px 15px 15px;
   -o-border-radius: 15px 15px 15px 15px;
   border-radius: 15px 15px 15px 15px;

@@ -7,12 +7,9 @@ _type: dynamic
 </div>
 
 <form class="form-inline" id="home-search" role="form" action="#/search" method="GET">
-  <div class="row">
-    <div class="col-md-5 col-md-offset-3">
-      <input type="text" name="query" id="query" class="form-control" placeholder="Search by Metadata">
-    </div>
-    <div class="col-md-2 no-padding">
-      <button type="submit" id="query-submit" class="btn btn-primary">Search</button>
+  <div class="row search">
+    <div class="col-lg-5 col-lg-offset-3">
+      <input type="text" name="query" id="query" class="form-control input-xxlarge" placeholder="Search by Metadata">
     </div>
     </div>
     <div class="col-md-8 col-md-offset-4">
@@ -23,11 +20,16 @@ _type: dynamic
   </div>
 </form>
 
+<hr/>
+
 {{#stats}}
-<div id="stats">
-  <div>Total Poems : {{poems_count}}</div>
-  <div>Total Authors: {{authors_count}}</div>
-</div>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-4">
+      <p class="lead">
+        {{poems_count}} poems
+        {{authors_count}} authors </p>
+    </div>
+  </div>
 {{/stats}}
 
 
