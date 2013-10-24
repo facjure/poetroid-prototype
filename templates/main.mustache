@@ -2,34 +2,24 @@
 _type: dynamic
 ---
 <div class="page-header text-center">
-    <h1>Discover Poetry Together</h1>
-    <p class="lead text-center">Curate, collect, and read poems from the public domain. From any device.</p>
+    <h1>Poetroid</h1>
+    <p class="lead text-center">Discover Poetry Together</p>
 </div>
 
-<form class="form-inline" id="home-search" role="form" action="#/search" method="GET">
-  <div class="row search">
+<div class="row search">
+  <form class="form-inline" id="home-search" role="form" action="#/search" method="GET">
     <div class="col-lg-5 col-lg-offset-3">
-      <input type="text" name="query" id="query" class="form-control input-xxlarge" placeholder="Search by Metadata">
+      <input type="text" name="query" id="query" class="form-control input-xxlarge" placeholder="Search poems by author, title, or metadata like tag: dark">
     </div>
-    </div>
-    <div class="col-md-8 col-md-offset-4">
-      <p class="help-block">
-        Ex: nature, author: wilde, tag: love
-      </p>
-    </div>
-  </div>
-</form>
+  </form>
+</div>
 
-<hr/>
-
-{{#stats}}
-  <div class="row">
-    <div class="col-md-2 col-md-offset-4">
-      <p class="lead">
-        {{poems_count}} poems
-        {{authors_count}} authors </p>
-    </div>
+<div class="row">
+  <div class="col-md-5 col-md-offset-3">
+    <p class="text-center"> Are you an approved editor? Click <a href="#/editor">here</a> to curate a poem. There are currently {{#stats}} <strong>{{poems_count}}</strong> poems with <strong>{{authors_count}}</strong> authors curated from the public domain.{{/stats}}
+    </p>
   </div>
-{{/stats}}
+</div>
+
 
 
