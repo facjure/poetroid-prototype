@@ -1,4 +1,5 @@
 var DEBUG = 1
+$.ajaxSetup({ cache: false })
 
 function log(msg, type) {
     type = typeof a !== 'undefined' ? a : "info"
@@ -21,15 +22,30 @@ tags: \n\
 -  \n\
 ---\n\n";
 
+function set_error_status (m) {
+    $("#status").removeClass("label-info")
+    if (!$("#status").hasClass("label-warning")) 
+        $("#status").addClass("label-warning")
+    $("#status").html(m)
+}
+
+function set_status (m) {
+    $("#status").removeClass("label-warning")
+    if (!$("#status").hasClass("label-info"))
+        $("#status").addClass("label-info")
+    $("#status").html(m)
+}
+
 
 function edit_new_file () {
-    $("#status").html("new file")
+    set_status("new file")
     $("#editing-area").val(default_text)
+    window.CURRENT_PATH = ""
+    $("#preview").html("")
+    $("#filename").html("")
 }
 
 function preview (e) {
-
-    var yaml_status = "<div id='results'>"
 
     var text = $("#editing-area").val()
     var text_parts = get_text_parts(text)
@@ -39,20 +55,18 @@ function preview (e) {
 
     try {
         yaml_ds = get_yaml_ds(text_parts[0])
-        yaml_status += "Metadata: OK<br>"
-        $("#status").html("editing")
+        set_status("editing")
     }
-    catch (YamlParseException) {
-        $("#status").html("Metadata Error " + YamlParseException.message)
-        yaml_status += "Metadata: NOT OK<br>"
-        $("#preview").html(yaml_status)
+    catch (e) {
+        set_error_status(e.message)
         return
     }
 
     path = get_path(yaml_ds)
 
-    yaml_status += "Filename: " + path + "</div>"
-    $("#preview").html(yaml_status + text_parts[1])
+    var file_name = "Filename: " + path
+    $("#filename").html(file_name)
+    $("#preview").html(text_parts[1])
 }
 
 
@@ -61,10 +75,15 @@ function get_yaml_ds(text) {
 
     try {
         yaml_ds = YAML.parse(text)
-        log(yaml_ds)
+        if (yaml_ds.author && yaml_ds.author.length >= 1 && yaml_ds.title && yaml_ds.title.length >= 1) {
+            log(yaml_ds)
+        }
+        else {
+            throw new Error("title and author should be present")
+        }
     }
-    catch (YamlParseException) {
-        throw YamlParseException
+    catch (e) {
+        throw e
     }
 
     return yaml_ds
@@ -100,63 +119,100 @@ function clean_name (name) {
     return clean_name
 }
 
-function get_file () {
-    var path = $("#editor-search").val()
-    $("#status").html("loading " + path)
+function get_file (e, datum) {
+    var path = datum.name
+    set_status("loading " + path)
     log(path)
     window.REPO.read('master', path, function(err, data) {
         $("#editing-area").val(data)
-        $("#status").html("editing " + path)
+        set_status("selected" + path)
         window.CURRENT_PATH = path
         preview()
     })
+    $('.tt-dropdown-menu').trigger('blur');
 }
+
+
+
+$(function () {
+
+    $("#login").on('click', function (e) {
+        e.preventDefault()
+
+          if ($(this).html() === "Logout")  {
+              window.auth.logout()
+              set_status("")
+              window.CURRENT_PATH = ""
+              $("#preview").html("")
+              $("#filename").html("")
+              $("#login").html("Login")
+              $("#editing-area").val("")
+              log("logging out")
+          }
+          else {
+            window.auth = new FirebaseSimpleLogin(new Firebase("https://tesjure.firebaseio.com"), function(error, user) {
+            if (error) {
+                set_error_status("login Failed")
+            }
+            else if (user) {
+
+                // Initialize globals
+
+                window.USER = user
+
+                window.GH = new Github({
+                    "token": user.accessToken,
+                    "auth": "oauth"
+                })
+
+                log(user)
+
+                window.REPO = window.GH.getRepo("Facjure", "poems")
+
+                window.REPO.getTree('master?recursive=true', function(err, tree) {
+                    window.LAST_COMMIT = tree
+
+                    if (!window.all_paths) {
+
+                        window.all_paths = _.map(tree, function (e) {
+                        var value = e.path
+                        var name = e.path.replace(/\..+$/, "").replace(/-/g, " ")
+                        return { "value": name, "name": value }
+                        })
+                    }
+
+                    var search_template = Mustache.compile("<p data-val='{{name}}'>{{value}}</p>")
+
+                    $('#editor-search').typeahead({
+                        name: "file-names",
+                        limit: 10,
+                        template: search_template,
+                        local: window.all_paths
+                    }).bind("typeahead:selected", get_file)
+
+                })
+
+                $("#login").html("Logout")
+                edit_new_file()
+
+            }
+        })
+
+
+              log("logging in")
+              window.auth.login('github', {
+                 rememberMe: true,
+                 scope: 'user, repo'
+              })
+          }
+     })
+
+})
+
 
 function editor_load () {
 
-    $.ajaxSetup({ cache: false })
-    var firebaseRef = new Firebase("https://tesjure.firebaseio.com")
-
-    var auth = new FirebaseSimpleLogin(firebaseRef, function(error, user) {
-        if (error) {
-            $("#status").html("login Failed")
-        }
-        else if (user) {
-
-            // Initialize globals
-
-            window.USER = user
-
-            window.GH = new Github({
-                "token": user.accessToken,
-                "auth": "oauth"
-            })
-
-            log(user)
-
-            window.REPO = window.GH.getRepo("Facjure", "poems")
-
-            window.REPO.getTree('master?recursive=true', function(err, tree) {
-                window.LAST_COMMIT = tree
-                log(window.LAST_COMMIT)
-
-                var all_paths = _.map(tree, function (e) {
-                   return e.path
-                })
-
-                $('#editor-search').typeahead({
-                    name: "file-names",
-                    limit: 10,
-                    local: all_paths
-                }).bind("typeahead:selected", get_file)
-
-            })
-
-            $("#login").html("logout")
-            edit_new_file()
-
-        }
-    })
+    window.CURRENT_PATH = ""
 
     $("#editing-area").keydown(function (e) {
         if (e.which == 9) {
@@ -167,39 +223,13 @@ function editor_load () {
                 + "    "
                 + $(this).val().substring(end));
 
-           $(this).get(0).selectionStart = 
+           $(this).get(0).selectionStart = start + 4;
            $(this).get(0).selectionEnd = start + 4;
         }
 
     })
 
-    $("#editor-search").keypress(function (e) {
-                if (e.which == 13) {
-            e.preventDefault()
-            get_file()
-        }
-     })
-
-    $("#login").click(function () {
-
-          if ($(this).html() === "logout")  {
-              auth.logout()
-              log("logging out")
-              $("#login").html("login")
-              $("#status").html("logged out")
-              $("#editing-area").val("")
-          }
-          else {
-              log("logging in")
-              auth.login('github', {
-                 rememberMe: true,
-                 scope: 'user, repo'
-              })
-          }
-     })
-
     $("#save").click(function (ev) {
-        $("#status").html("saving")
 
         var text = $("#editing-area").val()
         var text_parts = get_text_parts(text)
@@ -209,9 +239,12 @@ function editor_load () {
 
         try {
             yaml_ds = get_yaml_ds(text_parts[0])
+            if (text_parts[1] === undefined || text_parts[1].match(/^\s*$/))
+                throw Error("Content is Empty")
+            set_status("saving")
         }
-        catch (YamlParseException) {
-            $("#status").html("Metadata Error " + YamlParseException.message)
+        catch (e) {
+            set_error_status(e.message)
             return
         }
 
@@ -224,11 +257,11 @@ function editor_load () {
 
             window.REPO.write('master', path, text, 'Updated ' + yaml_ds.author + " - " + yaml_ds.title, function(err) {
                 if (!err) {
-                    $("#status").html("saved")
+                    set_status("saved")
                 }
                 else {
-                log(err)
-                    $("#status").html("save error")
+                    log(err)
+                    set_error_status("save error")
                 }
             })
         }, 2000); // Github bug
@@ -240,7 +273,6 @@ function editor_load () {
     })
 
     $("#new").click(edit_new_file)
-
 
     $("#editing-area").keyup(preview)
 
