@@ -1,6 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
-@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
-
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(http://fonts.googleapis.com/css?family=Alegreya);
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -18,7 +17,7 @@ button {
 
 html,
 body {
-  font-family: Vollkorn, 'Oxygen', sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: 18px;
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
@@ -84,7 +83,6 @@ textarea, input, button { outline: none; }
 }
 
 #preview {
-  font-family : 'Alegreya', serif;
   font-size: 20px;
   font-weight: 400;
   padding-left: 5%;
@@ -95,7 +93,7 @@ textarea, input, button { outline: none; }
   overflow: auto;
   border: 1px #e6e6e6 solid;
   background-color: rgb(192, 211, 210);
-  -webkit-border-radius: 15px 15px 15px 15px; 
+  -webkit-border-radius: 15px 15px 15px 15px;
   -moz-border-radius: 15px 15px 15px 15px;
   -o-border-radius: 15px 15px 15px 15px;
   border-radius: 15px 15px 15px 15px;
