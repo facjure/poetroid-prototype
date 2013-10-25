@@ -2,24 +2,27 @@
 _type: dynamic
 ---
 <div class="row">
-  <div class="col-lg-12 text-center">
+  <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-2 col-md-5 col-md-offset-2 col-lg-4 col-lg-offset-4 text-center">
     <h1>Poetroid</h1>
-    <p class="lead text-center">Discover Poetry Together</p>
+    <p class="lead">Discover Poetry Together</p>
   </div>
 </div>
 
-<div class="row search">
-  <div class="col-lg-6 col-lg-offset-3">
+<hr/>
+
+<div class="row search top-buffer">
+  <div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
     <form class="form-inline" id="home-search" role="form" action="#/search" method="GET">
         <input type="text" name="query" id="query" class="form-control input-xxlarge" placeholder="Search poems by author, title, or metadata like tag: dark">
     </form>
+     <p class="text-center clearfix"> serving {{#stats}} <strong>{{poems_count}}</strong> poems by <strong>{{authors_count}}</strong> authors, from the public domain.{{/stats}}
+    </p>
   </div>
 </div>
 
-<div id="stats" class="row">
-  <div class="col-lg-6 col-lg-offset-3">
-    <p class="text-center"> Are you an approved editor? Click <a href="#/editor">here</a> to curate a poem. There are currently {{#stats}} <strong>{{poems_count}}</strong> poems with <strong>{{authors_count}}</strong> authors curated from the public domain.{{/stats}}
-    </p>
+<div id="stats" class="row top-buffer-extra">
+  <div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <p id="poem-listing" class="text-center"> Click <a href="#/editor">here</a> to login if you're an approved editor.<p>
   </div>
 </div>
 

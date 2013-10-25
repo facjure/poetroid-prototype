@@ -102,3 +102,11 @@ textarea, input, button { outline: none; }
 .no-padding {
   padding-left: 0;
 }
+
+.top-buffer {
+  margin-top:10%;
+}
+
+.top-buffer-extra {
+  margin-top:30%;
+}
