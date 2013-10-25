@@ -1,21 +1,23 @@
 ---
 _type: dynamic
 ---
-<div class="page-header text-center">
+<div class="row">
+  <div class="col-lg-12 text-center">
     <h1>Poetroid</h1>
     <p class="lead text-center">Discover Poetry Together</p>
+  </div>
 </div>
 
 <div class="row search">
-  <form class="form-inline" id="home-search" role="form" action="#/search" method="GET">
-    <div class="col-lg-5 col-lg-offset-3">
-      <input type="text" name="query" id="query" class="form-control input-xxlarge" placeholder="Search poems by author, title, or metadata like tag: dark">
-    </div>
-  </form>
+  <div class="col-lg-6 col-lg-offset-3">
+    <form class="form-inline" id="home-search" role="form" action="#/search" method="GET">
+        <input type="text" name="query" id="query" class="form-control input-xxlarge" placeholder="Search poems by author, title, or metadata like tag: dark">
+    </form>
+  </div>
 </div>
 
-<div class="row">
-  <div class="col-md-5 col-md-offset-3">
+<div id="stats" class="row">
+  <div class="col-lg-6 col-lg-offset-3">
     <p class="text-center"> Are you an approved editor? Click <a href="#/editor">here</a> to curate a poem. There are currently {{#stats}} <strong>{{poems_count}}</strong> poems with <strong>{{authors_count}}</strong> authors curated from the public domain.{{/stats}}
     </p>
   </div>

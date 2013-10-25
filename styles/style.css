@@ -41,10 +41,6 @@ textarea, input, button { outline: none; }
   padding: 0 0 60px;
 }
 
-#main {
- margin-top: 50px;
-}
-
 #main, #container {
   height: 100%;
 }
@@ -69,19 +65,6 @@ textarea, input, button { outline: none; }
   text-align: center;
 }
 
-#stats {
-  margin-top: 150px;
-  border: 1px #e6e6e6 solid;
-  -webkit-border-radius: 15px 15px 15px 15px;
-  -moz-border-radius: 15px 15px 15px 15px;
-  -o-border-radius: 15px 15px 15px 15px;
-  border-radius: 15px 15px 15px 15px;
-}
-
-.help-block {
-  font-size: smaller;
-}
-
 #editing-area {
   margin-top: 15px;
   font-family : inherit;
@@ -100,14 +83,6 @@ textarea, input, button { outline: none; }
   border-radius: 15px 15px 15px 15px;
 }
 
-#query {
-  width: 460px;
-}
-
-#editor-search {
-  width: 460px;
-}
-
 #preview {
   font-family : 'Alegreya', serif;
   font-size: 20px;
@@ -119,8 +94,8 @@ textarea, input, button { outline: none; }
   white-space: pre;
   overflow: auto;
   border: 1px #e6e6e6 solid;
-  background-color: white;
-  -webkit-border-radius: 15px 15px 15px 15px;
+  background-color: rgb(192, 211, 210);
+  -webkit-border-radius: 15px 15px 15px 15px; 
   -moz-border-radius: 15px 15px 15px 15px;
   -o-border-radius: 15px 15px 15px 15px;
   border-radius: 15px 15px 15px 15px;

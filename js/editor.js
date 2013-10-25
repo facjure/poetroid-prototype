@@ -46,10 +46,8 @@ function edit_new_file () {
 }
 
 function preview (e) {
-
     var text = $("#editing-area").val()
     var text_parts = get_text_parts(text)
-
     log(text_parts[0])
     var yaml_ds
 
@@ -63,7 +61,6 @@ function preview (e) {
     }
 
     path = get_path(yaml_ds)
-
     var file_name = "Filename: " + path
     $("#filename").html(file_name)
     $("#preview").html(text_parts[1])
@@ -132,82 +129,72 @@ function get_file (e, datum) {
     $('.tt-dropdown-menu').trigger('blur');
 }
 
+function bind_typeahead() {
 
+    if (window.USER) {
+        if (!window.ALL_PATHS) { //cache
+            window.ALL_PATHS = _.map(window.LAST_COMMIT, function (e) {
+                var value = e.path
+                var name = e.path.replace(/\..+$/, "").replace(/-/g, " ")
+                return { "value": name, "name": value }
+            })
+        }
 
-$(function () {
+        var search_template = Mustache.compile("<p data-val='{{name}}'>{{value}}</p>")
 
-    $("#login").on('click', function (e) {
-        e.preventDefault()
+        $("#editor-search").width($("#editor-search-box").width())
 
-          if ($(this).html() === "Logout")  {
-              window.auth.logout()
-              set_status("")
-              window.CURRENT_PATH = ""
-              $("#preview").html("")
-              $("#filename").html("")
-              $("#login").html("Login")
-              $("#editing-area").val("")
-              log("logging out")
-          }
-          else {
-            window.auth = new FirebaseSimpleLogin(new Firebase("https://tesjure.firebaseio.com"), function(error, user) {
+        $('#editor-search').typeahead({
+            name: "file-names",
+            limit: 10,
+            template: search_template,
+            local: window.ALL_PATHS
+        }).bind("typeahead:selected", get_file)
+
+        $(".tt-dropdown-menu").width($("#editor-search").outerWidth())
+        $(".tt-hint").width($("#editor-search").width())
+
+        edit_new_file()
+    }
+}
+
+function login() {
+    if (window.AUTH) {
+        window.AUTH.logout()
+        window.CURRENT_PATH = ""
+    }
+    window.FBREF = new Firebase("https://tesjure.firebaseio.com")
+    window.LOGGED_IN = false
+    window.AUTH = new FirebaseSimpleLogin(window.FBREF, function(error, user) {
+        if (!window.LOGGED_IN) { //double login problem
             if (error) {
                 set_error_status("login Failed")
             }
             else if (user) {
-
-                // Initialize globals
-
+                window.LOGGED_IN = true
                 window.USER = user
-
                 window.GH = new Github({
                     "token": user.accessToken,
                     "auth": "oauth"
                 })
 
-                log(user)
-
                 window.REPO = window.GH.getRepo("Facjure", "poems")
-
                 window.REPO.getTree('master?recursive=true', function(err, tree) {
                     window.LAST_COMMIT = tree
-
-                    if (!window.all_paths) {
-
-                        window.all_paths = _.map(tree, function (e) {
-                        var value = e.path
-                        var name = e.path.replace(/\..+$/, "").replace(/-/g, " ")
-                        return { "value": name, "name": value }
-                        })
+                    if ($("#editor-search").length > 0) {
+                        bind_typeahead()
                     }
-
-                    var search_template = Mustache.compile("<p data-val='{{name}}'>{{value}}</p>")
-
-                    $('#editor-search').typeahead({
-                        name: "file-names",
-                        limit: 10,
-                        template: search_template,
-                        local: window.all_paths
-                    }).bind("typeahead:selected", get_file)
-
                 })
-
-                $("#login").html("Logout")
-                edit_new_file()
-
             }
-        })
+        }
+    })
 
-
-              log("logging in")
-              window.auth.login('github', {
-                 rememberMe: true,
-                 scope: 'user, repo'
-              })
-          }
-     })
-
-})
+    log("logging in")
+    window.AUTH.login('github', {
+        rememberMe: true,
+        scope: 'user, repo'
+    })
+}
 
 
 function editor_load () {
@@ -216,7 +203,7 @@ function editor_load () {
 
     $("#editing-area").keydown(function (e) {
         if (e.which == 9) {
-            e.preventDefault(); 
+            e.preventDefault();
             var start = $(this).get(0).selectionStart;
             var end = $(this).get(0).selectionEnd;
             $(this).val($(this).val().substring(0, start)
@@ -249,12 +236,9 @@ function editor_load () {
         }
 
         path = get_path(yaml_ds)
-
         log(path)
-        log(text)
 
         setTimeout(function (){
-
             window.REPO.write('master', path, text, 'Updated ' + yaml_ds.author + " - " + yaml_ds.title, function(err) {
                 if (!err) {
                     set_status("saved")
@@ -269,11 +253,9 @@ function editor_load () {
         window.REPO.getTree('master?recursive=true', function(err, tree) {
             window.LAST_COMMIT = tree
         })
-
     })
 
     $("#new").click(edit_new_file)
-
     $("#editing-area").keyup(preview)
 
 }

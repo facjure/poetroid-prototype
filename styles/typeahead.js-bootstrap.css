@@ -2,14 +2,13 @@
 .twitter-typeahead .tt-hint {
   margin-bottom: 0;
   display: block;
-  height: 58px;
+  height: 42px;
   padding: 8px 12px;
   font-size: 14px;
   line-height: 1.428571429;
 }
 
 .tt-dropdown-menu {
-  width: 460px;
   margin-top: 2px;
   padding: 5px 0;
   background-color: #fff;
@@ -59,7 +58,6 @@
 }
 
 .tt-hint {
-  width: 460px;
   color: lightgrey;
 }
 
