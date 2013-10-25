@@ -103,6 +103,10 @@ textarea, input, button { outline: none; }
   padding-left: 0;
 }
 
+.top-buffer-small {
+  margin-top:2%;
+}
+
 .top-buffer {
   margin-top:10%;
 }

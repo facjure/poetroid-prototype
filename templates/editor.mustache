@@ -4,24 +4,21 @@ _type: dynamic
 
 <div class="container" style="margin-bottom: 30px;">
 
-  <div class="row">
+  <div class="row top-buffer">
     <div class="row">
-      <div id="editor-search-box" class="col-md-5">
+      <div id="editor-search-box" class="col-md-6 col-md-offset-3">
         <input id="editor-search" class="form-control input-xxlarge" type="text" data-provide="typeahead">
       </div>
     </div>
-    <div class="row" style="margin-top: 5px">
+    <div class="row top-buffer-small" style="margin-top: 5px">
       <div class="col-md-5">
         <span id ="status" class="label label-info"></span>
-      </div>
-      <div class="col-md-1">
-        <button id="new">new</button>
       </div>
       <div class="col-md-6">
         <span id ="filename" class="label label-info"></span>
       </div>
     </div>
-    <div class="row">
+    <div class="row top-buffer-small">
       <div class="col-md-6">
         <textarea id="editing-area"></textarea>
       </div>
@@ -30,9 +27,12 @@ _type: dynamic
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-1 col-md-offset-5">
-        <button id="save">save</button>
+    <div class="row top-buffer-small">
+      <div class="col-md-1">
+        <button id="new">New File</button>
+      </div>
+      <div class="col-md-1 col-md-offset-4">
+        <button id="save">Save</button>
       </div>
     </div>
   </div>
