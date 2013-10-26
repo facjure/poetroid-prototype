@@ -42,7 +42,6 @@ function edit_new_file () {
     $("#editing-area").val(default_text)
     window.CURRENT_PATH = ""
     $("#preview").html("")
-    $("#filename").html("")
 }
 
 function preview (e) {
@@ -57,12 +56,10 @@ function preview (e) {
     }
     catch (e) {
         set_error_status(e.message)
+        $("#preview").html("")
         return
     }
 
-    path = get_path(yaml_ds)
-    var file_name = "Filename: " + path
-    $("#filename").html(file_name)
     $("#preview").html(text_parts[1])
 }
 
