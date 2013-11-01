@@ -1,5 +1,3 @@
-**Carl Sandburg**
-
 Happiness
 ---
 author: Carl Sandburg
@@ -408,8 +406,6 @@ tags:
   - Self
 ---
 
-*Musings of a Police Reporter in the Identification Bureau*
-
 YOU have loved forty women, but you have only one thumb.
 You have led a hundred secret lives, but you mark only one thumb.
 You go round the world and fight in a thousand wars and win all the world’s honors, but when you come back home the print of the one thumb your mother gave you is the same print of thumb you had in the old home when your mother kissed you and said good-by.
@@ -505,7 +501,6 @@ Because he laughed and daily dared Death:
 “Come and take me.”
 
 Limited
-
 ---
 author: Carl Sandburg
 curator: Michael
@@ -526,7 +521,6 @@ I ask a man in the smoker where he is going and he answers: “Omaha.”
 
 
 The Has-Been
-
 ---
 author: Carl Sandburg
 curator: Michael
@@ -545,7 +539,6 @@ The boy laughs and goes whistling “ee-ee-ee ee-ee-ee.” The stone face stands
 
 
 In a Back Alley
-
 ---
 author: Carl Sandburg
 curator: Michael
@@ -1629,7 +1622,6 @@ Death will break her claws
 
 
 Killers
-
 ---
 author: Carl Sandburg
 curator: Michael
@@ -1678,8 +1670,7 @@ Sixteen million men.
 
 
 
- AMONG THE RED GUNS
-
+AMONG THE RED GUNS
 ---
 author: Carl Sandburg
 curator: Michael
@@ -1759,8 +1750,7 @@ Loosening turf and leveling sod.
 
 
 
-                 MURMURINGS IN A FIELD HOSPITAL
-
+MURMURINGS IN A FIELD HOSPITAL
 ---
 author: Carl Sandburg
 curator: Michael
@@ -1934,8 +1924,7 @@ Into buildings for life and labor:
 
 
 
-                              JAWS
-
+JAWS
 ---
 author: Carl Sandburg
 curator: Michael
@@ -2112,8 +2101,7 @@ Come and have now:
 
 
 
-                             GRAVES
-
+GRAVES
 ---
 author: Carl Sandburg
 curator: Michael
@@ -2149,8 +2137,7 @@ I love you and your great way of forgetting.
 
 
 
-                           AZTEC MASK
-
+AZTEC MASK
 ---
 author: Carl Sandburg
 curator: Michael
@@ -2240,8 +2227,7 @@ And blood drops of undiminishing war.
 
 
 
-                           THE ANSWER
-
+THE ANSWER
 ---
 author: Carl Sandburg
 curator: Michael
@@ -2457,8 +2443,7 @@ The game is all your way, the secrets and the signals and
      Our prayer of thanks.
 
 
-                           AT A WINDOW
-
+AT A WINDOW
 ---
 author: Carl Sandburg
 curator: Michael
@@ -4362,8 +4347,6 @@ Tell no man anything for no man listens,
 Yet hold thy lips ready to speak.
 
 
-**W.B Yeats The Green Helmet and Others**
-
 His Dream
 ---
 author: W.B Yeats
@@ -4407,7 +4390,6 @@ By the sweet name of Death.
 
 
 The Woman Homer Sung
-
 ---
 author: W.B Yeats
 curator: Michael
@@ -4804,7 +4786,6 @@ I'll find the stable and pull out the bolt.
 
 
 A DRINKING SONG
-
 ---
 author: W.B Yeats
 curator: Michael
@@ -4852,7 +4833,6 @@ Now I may wither into the truth.
 
 ON HEARING THAT THE STUDENTS OF OUR NEW UNIVERSITY HAVE JOINED THE
 ANCIENT ORDER OF HIBERNIANS AND THE AGITATION AGAINST IMMORAL LITERATURE
-
 ---
 author: W.B Yeats
 curator: Michael
@@ -5177,13 +5157,7 @@ One cannot begin it too soon.
 
 
 
-Emily Dickinson
-First Series
-
-I. LIFE.
-
 I.
-
 SUCCESS.
 ---
 author: Emily Dickinson
@@ -5246,7 +5220,6 @@ Afterwards -- day!
 
 
 III.
-
 ROUGE ET NOIR.
 ---
 author: Emily Dickinson
@@ -5275,7 +5248,6 @@ Raffle for my soul.
 
 
 IV.
-
 ROUGE GAGNE.
 ---
 author: Emily Dickinson
@@ -5386,7 +5358,6 @@ I shall not live in vain.
 
 
 VII.
-
 ALMOST!
 ---
 author: Emily Dickinson
@@ -5480,7 +5451,6 @@ The liberty to die.
 
 
 X.
-
 IN A LIBRARY.
 ---
 author: Emily Dickinson
@@ -5590,7 +5560,6 @@ That we can show to-day?"
 
 
 XIII.
-
 EXCLUSION.
 ---
 author: Emily Dickinson
@@ -5626,7 +5595,6 @@ Like stone.
 
 
 XIV.
-
 THE SECRET.
 ---
 author: Emily Dickinson
@@ -5659,7 +5627,6 @@ How still the riddle lies!
 
 
 XV.
-
 THE LONELY HOUSE.
 ---
 author: Emily Dickinson
@@ -5759,7 +5726,6 @@ And uniforms of snow.
 
 
 XVII.
-
 DAWN.
 ---
 author: Emily Dickinson
@@ -5789,7 +5755,6 @@ That frightened but an hour.
 
 
 XVIII.
-
 THE BOOK OF MARTYRS.
 ---
 author: Emily Dickinson
@@ -5826,7 +5791,6 @@ Into renown!
 
 
 XIX.
-
 THE MYSTERY OF PAIN.
 ---
 author: Emily Dickinson
@@ -5895,7 +5859,6 @@ Leaning against the sun!
 
 
 XXI.
-
 A BOOK.
 ---
 author: Emily Dickinson
@@ -5953,7 +5916,6 @@ Was large enough for me.
 
 
 XXIII.
-
 UNRETURNING.
 ---
 author: Emily Dickinson
@@ -6061,11 +6023,7 @@ And blotted out the mills!
 
 
 
-II. LOVE.
-
-
 I.
-
 MINE.
 ---
 author: Emily Dickinson
@@ -6094,7 +6052,6 @@ Mine, while the ages steal!
 
 
 II.
-
 BEQUEST.
 ---
 author: Emily Dickinson
@@ -6126,7 +6083,6 @@ Your consciousness and me.
 
 
 III.
-
 ---
 author: Emily Dickinson
 curator: Michael
@@ -6153,7 +6109,6 @@ I will of you!
 
 
 IV.
-
 SUSPENSE.
 ---
 author: Emily Dickinson
@@ -6187,7 +6142,6 @@ The opening of a door!
 
 
 V.
-
 SURRENDER.
 ---
 author: Emily Dickinson
@@ -6270,7 +6224,6 @@ That will not state its sting.
 
 
 VII.
-
 WITH A FLOWER.
 ---
 author: Emily Dickinson
@@ -6301,7 +6254,6 @@ Almost a loneliness.
 
 
 VIII.
-
 PROOF.
 ---
 author: Emily Dickinson
@@ -6375,7 +6327,6 @@ Some burning noon go dry!
 
 
 X.
-
 TRANSPLANTED.
 ---
 author: Emily Dickinson
@@ -6409,7 +6360,6 @@ Your inference therefrom!
 
 
 XI.
-
 THE OUTLET.
 ---
 author: Emily Dickinson
@@ -6439,7 +6389,6 @@ Take me!
 
 
 XII.
-
 IN VAIN.
 ---
 author: Emily Dickinson
@@ -6522,9 +6471,7 @@ Despair!
 
 
 XIII.
-
 RENUNCIATION.
-
 ---
 author: Emily Dickinson
 curator: Michael
@@ -6581,7 +6528,6 @@ Through Calvaries of Love!
 
 
 XIV.
-
 LOVE'S BAPTISM.
 ---
 author: Emily Dickinson
@@ -6625,7 +6571,6 @@ And I choose -- just a throne.
 
 
 XV.
-
 RESURRECTION.
 ---
 author: Emily Dickinson
@@ -6664,7 +6609,6 @@ The most familiar guest.
 
 
 XVI.
-
 APOCALYPSE.
 ---
 author: Emily Dickinson
@@ -6700,7 +6644,6 @@ I'm wife! stop there!
 
 
 XVII.
-
 THE WIFE.
 ---
 author: Emily Dickinson
@@ -6736,7 +6679,6 @@ The fathoms they abide.
 
 
 XVIII.
-
 APOTHEOSIS.
 ---
 author: Emily Dickinson
@@ -6766,7 +6708,6 @@ And is lost in balms!
 
 
 III. NATURE.
-
 I.
 ---
 author: Emily Dickinson
@@ -6797,7 +6738,6 @@ And still the punctual snow!
 
 
 II.
-
 MAY-FLOWER.
 ---
 author: Emily Dickinson
@@ -6832,7 +6772,6 @@ Antiquity.
 
 
 III.
-
 WHY?
 ---
 author: Emily Dickinson
@@ -6903,7 +6842,6 @@ But not an hour more!
 
 
 V.
-
 ---
 author: Emily Dickinson
 curator: Michael
@@ -6929,7 +6867,6 @@ Is aristocracy.
 
 
 VI.
-
 A SERVICE OF SONG.
 ---
 author: Emily Dickinson
@@ -6993,7 +6930,6 @@ Wherefore, O summer's day?
 
 
 VIII.
-
 SUMMER'S ARMIES.
 ---
 author: Emily Dickinson
@@ -7040,7 +6976,6 @@ Or what Circassian land?
 
 
 IX.
-
 THE GRASS.
 ---
 author: Emily Dickinson
@@ -7114,7 +7049,6 @@ Bears me along that way.
 
 
 XI.
-
 SUMMER SHOWER.
 ---
 author: Emily Dickinson
@@ -7153,7 +7087,6 @@ And signed the fete away.
 
 
 XII.
-
 PSALM OF THE DAY.
 ---
 author: Emily Dickinson
@@ -7219,7 +7152,6 @@ A too presumptuous psalm.
 
 
 XIII.
-
 THE SEA OF SUNSET.
 ---
 author: Emily Dickinson
@@ -7247,7 +7179,6 @@ Dip, and vanish with fairy sails.
 
 
 XIV.
-
 PURPLE CLOVER.
 ---
 author: Emily Dickinson
@@ -7307,7 +7238,6 @@ When cancelled by the frost.
 
 
 XV.
-
 THE BEE.
 ---
 author: Emily Dickinson
@@ -7459,7 +7389,6 @@ But I shall never tell!
 
 
 XX.
-
 TWO WORLDS.
 ---
 author: Emily Dickinson
@@ -7493,7 +7422,6 @@ To him seems misery.
 
 
 XXI.
-
 THE MOUNTAIN.
 ---
 author: Emily Dickinson
@@ -7523,7 +7451,6 @@ Of dawn the ancestor.
 
 
 XXII.
-
 A DAY.
 ---
 author: Emily Dickinson
@@ -7593,7 +7520,6 @@ And be of buttercups the friend
 
 
 XXIV.
-
 THE WIND.
 ---
 author: Emily Dickinson
@@ -7638,7 +7564,6 @@ In seamless company.
 
 
 XXV.
-
 DEATH AND LIFE.
 ---
 author: Emily Dickinson
@@ -7695,7 +7620,6 @@ Keeps esoteric time.
 
 
 XXVII.
-
 INDIAN SUMMER.
 ---
 author: Emily Dickinson
@@ -7740,7 +7664,6 @@ Taste thine immortal wine!
 
 
 XXVIII.
-
 AUTUMN.
 ---
 author: Emily Dickinson
@@ -7770,7 +7693,6 @@ I'll put a trinket on.
 
 
 XXIX.
-
 BECLOUDED.
 ---
 author: Emily Dickinson
@@ -7799,7 +7721,6 @@ Without her diadem.
 
 
 XXX.
-
 THE HEMLOCK.
 ---
 author: Emily Dickinson

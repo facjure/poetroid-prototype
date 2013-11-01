@@ -50,7 +50,7 @@ for txtfile in glob(poems_path + os.sep + "*.txt"):
             raise Exception("Filenames should have hyphens only. \"<authorLastName>-<first-five-words-of-title>.txt\". Use - for all special characters.")
         text = open(txtfile, "r", "utf-8").read()
         yaml_text, poem = split_file(text)
-        if len(poem) < 10: 
+        if len(poem) < 10:
             raise Exception("Fault in process.py or Poem is too small")
         yaml.load(StringIO.StringIO(yaml_text))
     except Exception, error:
@@ -93,4 +93,4 @@ if len(log.readlines()) > 2:
     os.system("cd .build; git add index.html; git commit -m 'new deploy " + str(boston_time) + "'; git push --force origin gh-pages")
 
 
-    
+
