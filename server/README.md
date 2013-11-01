@@ -1,13 +1,39 @@
-# example
+## Poetroid Web
 
-A Clojure library designed to ... well, that part is up to you.
+### API
 
-## Usage
+OAuth:
 
-`lein run`
+  TBD: github, twitter
 
-## License
+Poems:
+- POST   /poem/ {new or updated body}
+- GET    /poem/{short-title}
+- GET    /poem/{short-title}/metadata/
+- GET    /poem/{map-of-searchParams}
 
-Copyright © 2013 Adam Bard
+- DELETE /poem/{short-title}
 
-Distributed under the Eclipse Public License, the same as Clojure.
+- POST   /poem/{name}/tags {map-of-tagNames}
+- GET    /poem/{name}/tags
+
+Metadata:
+- GET    /metadata/{search-params}
+- GET    /metadata/top-{n} ;;n=5,10,20,50,100
+
+Tags:
+- GET   /poem
+
+Collections:
+- POST /collections/{name}/{poem-short-title}
+- GET /collections/{name}
+
+- GET /collections/{search-params}
+
+Authors:
+- GET /authors/{name}
+- GET /authors/top-{x} ;;n=5,10,20,50,100
+
+### Usage
+
+  lein run
