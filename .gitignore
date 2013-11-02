@@ -1,3 +1,6 @@
+target/
+*.class
+
 recipe/styles/_*
 *.py[cod]
 config.yml
