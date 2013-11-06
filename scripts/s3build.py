@@ -5,19 +5,47 @@ import os
 import sys
 from datetime import datetime
 from dateutil import tz
+from tempfile import mkstemp
+from shutil import move
+from os import remove, close
+
 
 AWS_ACCESS_KEY_ID = 'AKIAIRPHIRQAJFSVSLUA'
 AWS_SECRET_ACCESS_KEY = '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'
-BUCKET_NAME = 'p.com'
+BUCKET_NAME = 'poetroid.com'
 CONN = boto.connect_s3(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 BUCKET = CONN.create_bucket(BUCKET_NAME, location=boto.s3.connection.Location.DEFAULT)
 
 POEMS_PATH = "/home/priyatam/github/poems"
 FROZEN_PIE_PATH = "/home/priyatam/github/frozen-pie/pie"
 POETROID_PATH = "/home/priyatam/github/poetroid"
-CONFIG = "client" + os.sep + "CONFIG.yml"
-LOG_FILE = "/home/priyatam/github/poetics/scripts/build.log"
+CONFIG = "client" + os.sep + "config.build.yml"
+LOG_FILE = "/home/priyatam/github/poetroid/scripts/build.log"
 INDEX_HTML = "client" + os.sep + ".build" + os.sep + "index.html"
+
+def update_yaml():
+
+    #Create temp file
+    fh, abs_path = mkstemp()
+    new_file = open(abs_path,'w')
+    old_file = open(CONFIG)
+
+    for line in old_file:
+        build = re.match(r'build: (\d+)\n$')
+        if build:
+            no = build.group(1)
+            no= str(int(no) + 1)
+            line = 'build: %s\n' % no
+        new_file.write(line)
+
+    # close temp file
+    new_file.flush()
+    os.fsync(new_file.fileno())
+    new_file.close()
+    old_file.close()
+
+    # Atomic Rename
+    os.rename(abs_path, CONFIG)
 
 def build():
     utc = datetime.utcnow()
@@ -39,6 +67,8 @@ def build():
     k = Key(BUCKET)
     k.key = 'index.html'
     k.set_contents_from_filename(INDEX_HTML)
+
+    update_yaml()
 
     deploy_time = 'Deployed at ' + str(la_time) + "\n"
     with open(LOG_FILE, "a") as mylog:
