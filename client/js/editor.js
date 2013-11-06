@@ -165,7 +165,7 @@ function login() {
     window.AUTH = new FirebaseSimpleLogin(window.FBREF, function(error, user) {
         if (!window.LOGGED_IN) { //double login problem
             if (error) {
-                set_error_status("login Failed")
+                set_error_status("login failed")
             }
             else if (user) {
                 window.LOGGED_IN = true
@@ -177,9 +177,15 @@ function login() {
 
                 window.REPO = window.GH.getRepo("Facjure", "poems")
                 window.REPO.getTree('master?recursive=true', function(err, tree) {
-                    window.LAST_COMMIT = tree
-                    if ($("#editor-search").length > 0) {
-                        bind_typeahead()
+                    if (err.error == 404) {
+                        console.log(err)
+                        set_error_status("login failed : not authorized by github")
+                    }
+                    else {
+                        window.LAST_COMMIT = tree
+                        if ($("#editor-search").length > 0) {
+                            bind_typeahead()
+                        }
                     }
                 })
             }
