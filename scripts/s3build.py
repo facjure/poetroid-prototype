@@ -8,7 +8,7 @@ from dateutil import tz
 from tempfile import mkstemp
 from shutil import move
 from os import remove, close
-
+from glob import glob
 
 AWS_ACCESS_KEY_ID = 'AKIAIRPHIRQAJFSVSLUA'
 AWS_SECRET_ACCESS_KEY = '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'
@@ -22,6 +22,7 @@ POETROID_PATH = "/home/priyatam/github/poetroid"
 CONFIG = "client" + os.sep + "config.build.yml"
 LOG_FILE = "/home/priyatam/github/poetroid/scripts/build.log"
 INDEX_HTML = "client" + os.sep + ".build" + os.sep + "index.html"
+JS_DIR = "client" + os.sep + "js"
 
 def update_yaml():
 
@@ -67,6 +68,12 @@ def build():
     k = Key(BUCKET)
     k.key = 'index.html'
     k.set_contents_from_filename(INDEX_HTML)
+
+    for jsfile in glob(JS_DIR + os.sep + "*.js"):
+        k = Key(BUCKET)
+        filename = os.path.basename(jsfile)
+        k.key = filename
+        k.set_contents_from_filename(jsfile)
 
     update_yaml()
 
