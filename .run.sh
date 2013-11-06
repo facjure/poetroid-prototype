@@ -1,5 +1,5 @@
-cd ../frozen-pie
-bake.py --config /Users/priyatam/Dev/github/facjure/poetroid/client/config.yml
+cd ../frozen-pie/pie
+pie.py --config /Users/priyatam/Dev/github/facjure/poetroid/client/config.yml
 cd ../poetroid/client
 cp js/* .build/*
 cd .build
