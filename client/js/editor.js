@@ -177,7 +177,7 @@ function login() {
 
                 window.REPO = window.GH.getRepo("Facjure", "poems")
                 window.REPO.getTree('master?recursive=true', function(err, tree) {
-                    if (err.error == 404) {
+                    if (err && err.error == 404) {
                         console.log(err)
                         set_error_status("login failed : not authorized by github")
                     }
