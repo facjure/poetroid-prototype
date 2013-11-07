@@ -37,6 +37,8 @@ def stats(text):
     unique_authors = len(set(authors))
     stats['poems_count'] = poems_count
     stats['authors_count'] = unique_authors
+    stats['version'] = config['version']
+    stats['build'] = config['build']
     return renderer.render(text,stats)
 
 
