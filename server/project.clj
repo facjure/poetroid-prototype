@@ -7,5 +7,6 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [ring "1.2.1"]
                  [compojure "1.1.6"]
-                 [de.ubercode.clostache/clostache "1.3.1"]]
+                 [de.ubercode.clostache/clostache "1.3.1"]
+                 [com.datomic/datomic-free "0.8.4218"]]
   :main poetroid.core)
