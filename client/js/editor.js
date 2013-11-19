@@ -133,6 +133,7 @@ function bind_typeahead() {
             window.ALL_PATHS = _.map(window.LAST_COMMIT, function (e) {
                 var value = e.path
                 var name = e.path.replace(/\..+$/, "").replace(/-/g, " ")
+                var name = name.replace(/^poems\//, "")
                 return { "value": name, "name": value }
             })
         }
@@ -175,7 +176,7 @@ function login() {
                     "auth": "oauth"
                 })
 
-                window.REPO = window.GH.getRepo("Facjure", "poems")
+                window.REPO = window.GH.getRepo("Facjure", "poetroid-poems")
                 window.REPO.getTree('master?recursive=true', function(err, tree) {
                     if (err && err.error == 404) {
                         console.log(err)
