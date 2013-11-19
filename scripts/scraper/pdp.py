@@ -49,8 +49,7 @@ def save_link(link, char, pageno):
     link = "http://public-domain-poetry.com/" + ro.group(1)
     r = requests.get(link, headers=headers)
     if r.status_code == 404:
-        print "FAILED AT " + char + " --- " + str(pageno)
-        exit(1)
+        print "FAILED AT " + link + " --- " + char + " --- " + str(pageno)
     r.encoding = 'utf-8'
     filename = html_dir + char + "/" + str(pageno) + "/" + link.rsplit('/',1)[-1] + " - " + str(datetime.now())
     write_file(filename, r.text)
@@ -60,16 +59,12 @@ def get_page(char, pageno):
     link = generateazlink(char,pageno)
     r = requests.get(link, headers=headers)
     if r.status_code == 404:
-        print "FAILED AT " + char + " --- " + str(pageno)
-        exit(1)
+        print "FAILED AT " + link + " --- " + char + " --- " + str(pageno)
     r.encoding = 'utf-8'
-    filename = html_dir + char + "/1.html"
-    dirforpoems = char + "/1"
+    filename = html_dir + char + "/" + str(pageno) + ".html"
+    dirforpoems = char + "/" + str(pageno)
     write_file(filename, r.text, dirforpoems)
     bso = bs(r.text, "html5lib")
-    return bso
-
-def get_first_page(char, pageno):
     return bso
 
 def get_pages(char, pageno):
@@ -78,7 +73,7 @@ def get_pages(char, pageno):
     lastpage_link = required_links[-1]
     ro = re.search(r'(\d+)"><', str(lastpage_link))
     lastpage_no =  ro.group(1)
-    index = 1
+    index = pageno
     while index <= int(lastpage_no):
         i = 0
         iindex = 1
@@ -92,7 +87,7 @@ def get_pages(char, pageno):
             i += 3
             iindex += 1
         index = index + 1
-        current_page = get_page(generateazlink(char, index))
+        current_page = get_page(char, index)
         required_links = current_page.find_all('table')[10].find_all('a')
         lastpage_link = required_links[-1]
 
@@ -102,6 +97,6 @@ pageno = sys.argv[2]
 for char in string.ascii_uppercase:
     if ord(char) < ord(skip_alpha):
         continue
-    import pdb; pdb.set_trace()
+#    import pdb; pdb.set_trace()
     get_pages(char, int(pageno))
-
+    pageno = 1
