@@ -1,5 +1,5 @@
-content: /home/priyatam/github/poems
-recipe_root: /home/priyatam/github/poetroid/client
+recipe_root: /Users/priyatam/Dev/github/facjure/poetroid
+content: /Users/priyatam/Dev/github/facjure/poetroid-poems
 routes:
     - js/controller.js
 
