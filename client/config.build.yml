@@ -1,0 +1,11 @@
+content: /home/priyatam/github/poems
+recipe_root: /home/priyatam/github/poetroid/client
+routes:
+    - js/controller.js
+
+first_page: blog
+default_template: poem.mustache
+
+title: Discover Poetry Together
+version: 0.4
+build: 278
