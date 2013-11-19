@@ -20,14 +20,16 @@ BUCKET_NAME = 'poetroid.com'
 CONN = boto.connect_s3(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 BUCKET = CONN.create_bucket(BUCKET_NAME, location=boto.s3.connection.Location.DEFAULT)
 
-# poetroid paths
-POEMS_PATH = "/Users/priyatam/Dev/github/facjure/poetroid-poems"
-FROZEN_PIE_PATH = "/Users/priyatam/Dev/github/priyatam/frozen-pie/pie"
-POETROID_PATH = "/Users/priyatam/Dev/github/facjure/poetroid"
-CONFIG = "client" + os.sep + "config.build.yml"
-LOG_FILE = "/Users/priyatam/Dev/github/facjure/poetroid/scripts/build.log"
-INDEX_HTML = "client" + os.sep + ".build" + os.sep + "index.html"
-JS_DIR = "client" + os.sep + "js"
+# Paths
+ROOT = "/Users/priyatam/Dev/github"
+POEMS = ROOT + "/facjure/poetroid-poems"
+FROZEN_PIE = ROOT + "/priyatam/frozen-pie/pie"
+POETROID = ROOT + "/facjure/poetroid"
+
+CONFIG = POETROID + "/client/config.build.yml"
+LOG = POETROID + "/client/build.log"
+INDEX_HTML = POETROID + "/client/.build/index.html"
+JS = "client/js"
 
 
 def build():
@@ -37,13 +39,13 @@ def build():
     utc = utc.replace(tzinfo=from_zone)
     la_time = utc.astimezone(to_zone)
 
-    os.chdir(POETROID_PATH)
+    os.chdir(POETROID)
     os.system("git pull origin master")
-    os.chdir(POEMS_PATH)
+    os.chdir(POEMS)
     os.system("git pull origin master")
-    os.chdir(FROZEN_PIE_PATH)
-    os.system("python pie.py --config " + POETROID_PATH + os.sep + CONFIG)
-    os.chdir(POETROID_PATH)
+    os.chdir(FROZEN_PIE)
+    os.system("python pie.py --config " + CONFIG)
+    os.chdir(POETROID)
 
     print 'Uploading %s to Amazon S3 bucket %s' % (INDEX_HTML, BUCKET_NAME)
 
@@ -51,36 +53,35 @@ def build():
     k.key = 'index.html'
     k.set_contents_from_filename(INDEX_HTML)
 
-    for jsfile in glob(JS_DIR + os.sep + "*.js"):
+    for jsfile in glob(JS + os.sep + "*.js"):
         k = Key(BUCKET)
         filename = "js/" + os.path.basename(jsfile)
         k.key = filename
         k.set_contents_from_filename(jsfile)
 
-    no = update_yaml()
+    app_version = update_yaml()
 
-    deploy_time = 'Deployed ' + str(no) + ' at ' + str(la_time) + "\n"
-    with open(LOG_FILE, "a") as mylog:
+    deploy_time = 'Deployed ' + str(app_version) + ' at ' + str(la_time) + "\n"
+    with open(LOG, "a") as mylog:
         mylog.write(deploy_time)
-
     return deploy_time
 
 
 def update_yaml():
-    os.chdir(POETROID_PATH)
+    os.chdir(POETROID)
 
     #Create temp file
     fh, abs_path = mkstemp()
     new_file = open(abs_path,'w')
     old_file = open(CONFIG)
-    no = -1
+    app_version = -1
 
     for line in old_file:
         build = re.match(r'build: (\d+)\n$', line)
         if build:
-            no = build.group(1)
-            no= str(int(no) + 1)
-            line = 'build: %s\n' % no
+            app_version = build.group(1)
+            app_version = str(int(app_version) + 1)
+            line = 'build: %s\n' % app_version
         new_file.write(line)
 
     # close temp file
@@ -91,7 +92,7 @@ def update_yaml():
 
     remove(CONFIG)
     move(abs_path, CONFIG)
-    return no
+    return app_version
 
 
 if __name__ == '__main__':
