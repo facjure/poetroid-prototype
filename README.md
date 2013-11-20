@@ -10,7 +10,7 @@ Web: you're in it, and it's opensource.
 
 Engine: is not opensourced yet, and runs on the cloud as a distributed server. It's written in Clojure.
 
-Data: is opensource, and is available as [poetrid-public-domain](https://github.com/Facjure/poetroid-public-domain).
+Data: is opensource, and is available as free poems in [poetrid-public-domain](https://github.com/Facjure/poetroid-public-domain).
 
 There is no mobile: [Responsive Web Design](http://en.wikipedia.org/wiki/Responsive_web_design) _is_ mobile.
 
