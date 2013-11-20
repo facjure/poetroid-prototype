@@ -1,0 +1,12 @@
+### DO NOT MODIFY THIS FILE. INSTEAD, CREATE A COPY AND RENAME FILE AS config.yml AND
+### ADD YOUR LOCAL PATHS. FILE IS IGNORED BY GIT ###
+
+BUCKET_NAME: 'CHANGE-ME'
+
+# local paths
+poetroid: "facjure/poetroid"
+poetroid_config: "facjure/poetroid/client/config.build.yml"
+poems: "facjure/poetroid-poems"
+js: "facjure/poetroid/client/js"
+frozen_pie: "facjure/literatte/pie"
+log: "facjure/poetroid/client/build.log"
