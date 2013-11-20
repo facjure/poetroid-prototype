@@ -1,6 +1,6 @@
 # Discover Poetry Together
 
-Thousands of poems in the public domain live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans, even machines, can't search them in a central library.
+Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans, even machines, can't search them in a central library.
 
 Let's build one.
 
@@ -14,7 +14,7 @@ Web: you're in it.
 
 Engine: is not opensourced yet, and runs on the cloud as a distributed server. It's written in Clojure.
 
-Data: is available as free poems in [poetrid-public-domain](https://github.com/Facjure/poetroid-public-domain).
+Data: is poems; public domain poems are available from [poetrid-public-domain](https://github.com/Facjure/poetroid-public-domain) public library.
 
 There is no mobile: [Responsive Web Design](http://en.wikipedia.org/wiki/Responsive_web_design) _is_ mobile.
 
