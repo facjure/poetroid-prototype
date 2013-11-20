@@ -22,9 +22,11 @@ There is no mobile: [Responsive Web Design](http://en.wikipedia.org/wiki/Respons
 
 Prototyping / R&D.
 
+Currently, a static site with in-built search hosts ~2000 poems. All poems are versioned in github.
+
 [Here you go](http://www.poetroid.com).
 
-Currently, a static site with in-built search hosts ~2000 poems. All poems are versioned in github.Editors can add, edit, and curate tags and metadata via an inline Markdown editor with live-preview. New poems are refreshed in the site automatically via a github-hook that routes to [Literatti](https://github.com/Facjure/literatte), our compiler that rebuilds the site.
+When a poet or curator searches for a poem by title or author, the page shows the restored poem, aligned typographically, line endings intact, to fit the shape of their screen. Tags and metadata can be clicked naturally to discover similar poems' metadata. Approved editors can curate metadata via an inline Markdown editor with live-preview. New poems are refreshed in the site automatically via a github-hook that routes to [Literatti](https://github.com/Facjure/literatte), our compiler that rebuilds the site.
 
 Once the engine is ready the _web_ will be rewritten, along with new features, in Clojurescript.
 
