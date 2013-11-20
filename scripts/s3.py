@@ -33,10 +33,10 @@ import re
 def build(config):
     """ deploy tasks"""
     # cleanup git
-    #os.chdir(config['poetroid'])
-    #os.system("git pull origin master")
-    #os.chdir(config['poems'])
-    #os.system("git pull origin master")
+    os.chdir(config['poetroid'])
+    os.system("git pull origin master")
+    os.chdir(config['poems'])
+    os.system("git pull origin master")
 
     # run frozen pie
     os.chdir(config['frozen_pie'])
