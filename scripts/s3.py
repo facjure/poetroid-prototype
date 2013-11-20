@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+  S3 deploy and other utils
+"""
+
 import boto
 import boto.s3
 from boto.s3.key import Key

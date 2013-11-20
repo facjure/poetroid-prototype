@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+"""
+  Listens to github hooks at /poetroid and runs literatti and sends results to s3
+
+"""
+
 from flask import Flask, request
 import json
 from s3 import build

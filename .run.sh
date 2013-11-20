@@ -1,4 +1,4 @@
-cd ../frozen-pie/pie
+cd ../literatte/pie
 pie.py --config /Users/priyatam/Dev/github/facjure/poetroid/client/config.yml
 cd ../poetroid/client
 cp js/* .build/*

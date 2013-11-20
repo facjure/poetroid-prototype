@@ -4,23 +4,21 @@ Curate, collect, and read poems from the public domain. From any device. For fre
 
 ## Overview
 
-The poetroid platform consists of three parts: web, engine, and [poems](https://github.com/Facjure/poetroid-public-domain).
+The poetroid platform consists of three parts: web, engine, and data.
 
-You're in the web. It's opensource.
+You're in the web--it's opensourced.
 
-So are poems.
+Data is currently [poems from the public domain](https://github.com/Facjure/poetroid-public-domain). Public domain should always be opensourced.
 
-The engine, not opensourced yet, runs on the cloud as a distributed server and is under active development.
+The engine, not opensourced yet, runs on the cloud as a distributed server.
 
-It's written in clojure.
-
-This project also includes python/clojure scripts to scrap sites from the public domain
+There is no mobile: responsive web => mobile.
 
 ## Status and Roadmap
 
 Prototyping. Currently in *Research & Development*.
 
-The current [site](http://www.poetroid.com) is a static site, with in-built search, hosting 2000 poems. Editors can add, edit, and curate tags and metadata via an inline markdown editor with live-preview. The site automatically updates via a github-hook that routes to [literatti](https://github.com/Facjure/literatte) compiler running on the cloud.
+The current [web](http://www.poetroid.com) is a static site, with in-built regex search, hosting 2000 poems. Editors can add, edit, and curate tags and metadata via an inline markdown editor with live-preview. The site automatically updates via a github-hook that routes to [literatti](https://github.com/Facjure/literatte) compiler running on the cloud.
 
 Once the engine is ready for alpha, the _web_ will be rewritten in clojurescript.
 
