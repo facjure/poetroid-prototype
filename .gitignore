@@ -1,4 +1,4 @@
-.config.yml
+scripts/config.yml
 
 scraper/
 .nrepl-port

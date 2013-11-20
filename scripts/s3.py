@@ -1,14 +1,24 @@
 #!/usr/bin/env python
 
 """
-  S3 deploy and other utils
+  Build and deploy to S3.
+
+  Must have AWS_ACCESS_KEY and AWS_SECRET_KEY set in your sys env.
+
+  run:
+    s3.py
+        or
+    s3.py --config=path_to_config_yml
+
 """
 
 import boto
 import boto.s3
+import yaml
 from boto.s3.key import Key
 import os
 import sys
+from codecs import open
 from datetime import datetime
 from dateutil import tz
 from tempfile import mkstemp
@@ -18,7 +28,7 @@ from glob import glob
 import re
 
 
-def deploy():
+def build(config):
     """ deploy tasks"""
     # cleanup git
     os.chdir(config['poetroid'])
@@ -31,11 +41,11 @@ def deploy():
     os.system("python pie.py --config " + config['poetroid_config'])
     os.chdir(config['poetroid'])
 
-    # init s3
-    CONN = boto.connect_s3(config['AWS_ACCESS_KEY_ID'], config['AWS_SECRET_ACCESS_KEY'])
+     # s3
+    CONN = boto.connect_s3(os.environ['AWS_ACCESS_KEY'], os.environ['AWS_SECRET_ACCESS_KEY'])
     BUCKET = CONN.create_bucket(config['BUCKET_NAME'], location=boto.s3.connection.Location.DEFAULT)
-
-    deploy_index(config)
+    deploy_index(config, BUCKET)
+    deploy_js(config, BUCKET)
 
     # update version
     app_version = update_version()
@@ -45,29 +55,30 @@ def deploy():
     return deploy_time
 
 
-def deploy_index(config):
+def deploy_index(config, bucket):
     """ index.html -> S3"""
+
     utc = datetime.utcnow()
     utc = utc.replace(tzinfo=tz.gettz('UTC'))
     la_time = utc.astimezone(tz.gettz('America/Los_Angeles'))
 
-    print 'Uploading %s to Amazon S3 bucket %s' % (index_file, bucket)
+    print 'Uploading %s to Amazon S3 bucket %s' % (index_file, config['BUCKET_NAME'])
 
-    k = Key(BUCKET)
+    k = Key(bucket)
     k.key = 'index.html'
-    k.set_contents_from_filename(INDEX_HTML)
+    k.set_contents_from_filename(config['index_html'])
 
 
-def deploy_js(bucket):
+def deploy_js(config, bucket):
     """ *.js -> s3"""
-     for jsfile in glob("js" + os.sep + "*.js"):
+    for jsfile in glob("js" + os.sep + "*.js"):
         k = Key(bucket)
         filename = "js/" + os.path.basename(jsfile)
         k.key = filename
         k.set_contents_from_filename(jsfile)
 
 
-def update_version():
+def update_version(config):
     os.chdir(config['poetroid'])
 
     #Create temp file
@@ -90,14 +101,18 @@ def update_version():
     new_file.close()
     old_file.close()
 
-    remove(config['config'])
+    remove(config['poetroid_config'])
     move(abs_path, CONFIG)
     return app_version
 
 
-if __name__ == '__main__':
-    # load config
-    with open(".config.yml", "r", "utf-8") as fin:
+def load_config():
+    """"""
+    with open("config.yml", "r", "utf-8") as fin:
         config = yaml.load(fin.read())
+    return config
 
-    build()
+
+if __name__ == '__main__':
+    config = load_config()
+    build(config)
