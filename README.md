@@ -1,8 +1,12 @@
 # Discover Poetry Together
 
-Curate, View, and Discover thousands of poems from the public domain. From any device.
+Thousands of poems in the public domain live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans, even machines, can't search them in a central library.
+
+Let's build one.
 
 ## Overview
+
+Curate, View, and Discover thousands of poems. From any device.
 
 The poetroid platform consists of three parts: web, engine, and data.
 
@@ -20,9 +24,9 @@ Prototyping / R&D.
 
 [Here you go](http://www.poetroid.com).
 
-Currently, a static site with in-built search hosts ~2000 poems, handcrafted one poem at a time. All poems are versioned in github. Editors can add, edit, and curate tags and metadata via an inline Markdown editor with live-preview. Any changes are refreshed automatically via a github-hook that routes to [Literatti](https://github.com/Facjure/literatte), our compiler running on the cloud, that rebuilds the site.
+Currently, a static site with in-built search hosts ~2000 poems. All poems are versioned in github.Editors can add, edit, and curate tags and metadata via an inline Markdown editor with live-preview. New poems are refreshed in the site automatically via a github-hook that routes to [Literatti](https://github.com/Facjure/literatte), our compiler that rebuilds the site.
 
-Once the engine is ready the _web_ will be rewritten, along with new features.
+Once the engine is ready the _web_ will be rewritten, along with new features, in Clojurescript.
 
 ## Usage
 
