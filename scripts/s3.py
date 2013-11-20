@@ -110,8 +110,20 @@ def load_config():
     """"""
     with open("config.yml", "r", "utf-8") as fin:
         config = yaml.load(fin.read())
-    return config
 
+    poetroid_config = config['poetroid'] + os.sep + "client" + os.sep + "config.build.yml"
+    js = config['poetroid'] + os.sep + "client" + os.sep + "js"
+    log = config['poetroid'] + os.sep + "client" + os.sep + "build.log"
+
+    return newdict({'poetroid_config': poetroid_config, 'js': js, 'log': log }, config)
+
+
+def newdict(*dicts):
+    """Creates a new dictionary out of several dictionaries"""
+    _dict = {}
+    for d in dicts:
+        _dict.update(d)
+    return _dict
 
 if __name__ == '__main__':
     config = load_config()
