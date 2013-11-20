@@ -2,7 +2,7 @@
 
 from flask import Flask, request
 import json
-from s3build import build
+from s3 import build
 import os
 
 app = Flask(__name__)
