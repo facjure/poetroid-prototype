@@ -10,6 +10,8 @@
         or
     s3.py --config=path_to_config_yml
 
+    TODO: Refactor into Literatte: util.build(), util.deploy_s3()
+
 """
 
 import boto
@@ -31,46 +33,43 @@ import re
 def build(config):
     """ deploy tasks"""
     # cleanup git
-    os.chdir(config['poetroid'])
-    os.system("git pull origin master")
-    os.chdir(config['poems'])
-    os.system("git pull origin master")
-    os.chdir(config['frozen_pie'])
+    #os.chdir(config['poetroid'])
+    #os.system("git pull origin master")
+    #os.chdir(config['poems'])
+    #os.system("git pull origin master")
 
     # run frozen pie
+    os.chdir(config['frozen_pie'])
     os.system("python pie.py --config " + config['poetroid_config'])
     os.chdir(config['poetroid'])
 
-     # s3
-    CONN = boto.connect_s3(os.environ['AWS_ACCESS_KEY'], os.environ['AWS_SECRET_ACCESS_KEY'])
+    AWS_ACCESS_KEY = os.environ['AWS_ACCESS_KEY']
+    AWS_SECRET_KEY = os.environ['AWS_SECRET_KEY']
+
+    # s3
+    CONN = boto.connect_s3(AWS_ACCESS_KEY, AWS_SECRET_KEY)
     BUCKET = CONN.create_bucket(config['BUCKET_NAME'], location=boto.s3.connection.Location.DEFAULT)
-    deploy_index(config, BUCKET)
-    deploy_js(config, BUCKET)
+    deploy(config, BUCKET)
 
     # update version
-    app_version = update_version()
-    deploy_time = 'Deployed ' + str(app_version) + ' at ' + str(la_time) + "\n"
-    with open(LOG, "a") as mylog:
-        mylog.write(deploy_time)
-    return deploy_time
-
-
-def deploy_index(config, bucket):
-    """ index.html -> S3"""
-
+    app_version = inc_version(config)
     utc = datetime.utcnow()
     utc = utc.replace(tzinfo=tz.gettz('UTC'))
     la_time = utc.astimezone(tz.gettz('America/Los_Angeles'))
+    deploy_time = 'Deployed ' + str(app_version) + ' at ' + str(la_time) + "\n"
+    with open(config['log'], "a") as mylog:
+        mylog.write(deploy_time)
 
-    print 'Uploading %s to Amazon S3 bucket %s' % (index_file, config['BUCKET_NAME'])
+    return deploy_time
 
+
+def deploy(config, bucket):
+    """ index.html -> S3 AND *.js -> s3 """
+    print 'Uploading %s to Amazon S3 bucket %s' % ('index.html', config['BUCKET_NAME'])
     k = Key(bucket)
     k.key = 'index.html'
     k.set_contents_from_filename(config['index_html'])
 
-
-def deploy_js(config, bucket):
-    """ *.js -> s3"""
     for jsfile in glob("js" + os.sep + "*.js"):
         k = Key(bucket)
         filename = "js/" + os.path.basename(jsfile)
@@ -78,7 +77,8 @@ def deploy_js(config, bucket):
         k.set_contents_from_filename(jsfile)
 
 
-def update_version(config):
+def inc_version(config):
+    """ increment app's minor version in config.yml """
     os.chdir(config['poetroid'])
 
     #Create temp file
@@ -102,7 +102,7 @@ def update_version(config):
     old_file.close()
 
     remove(config['poetroid_config'])
-    move(abs_path, CONFIG)
+    move(abs_path, config['poetroid_config'])
     return app_version
 
 
@@ -111,11 +111,12 @@ def load_config():
     with open("config.yml", "r", "utf-8") as fin:
         config = yaml.load(fin.read())
 
-    poetroid_config = config['poetroid'] + os.sep + "client" + os.sep + "config.build.yml"
-    js = config['poetroid'] + os.sep + "client" + os.sep + "js"
-    log = config['poetroid'] + os.sep + "client" + os.sep + "build.log"
+    poetroid_config = config['poetroid'] + os.sep + "config.yml"
+    js = config['poetroid'] + os.sep + "js"
+    log = config['poetroid'] + os.sep + "build.log"
+    index_html = config['poetroid'] + os.sep + ".build" + os.sep + "index.html"
 
-    return newdict({'poetroid_config': poetroid_config, 'js': js, 'log': log }, config)
+    return newdict({'poetroid_config': poetroid_config, 'js': js, 'log': log, 'index_html': index_html }, config)
 
 
 def newdict(*dicts):

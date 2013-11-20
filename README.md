@@ -12,7 +12,7 @@ Data is currently [poems from the public domain](https://github.com/Facjure/poet
 
 The engine, not opensourced yet, runs on the cloud as a distributed server.
 
-There is no mobile: responsive web => mobile.
+There is no mobile: [responsive web design](http://en.wikipedia.org/wiki/Responsive_web_design) _is_ mobile.
 
 ## Status and Roadmap
 

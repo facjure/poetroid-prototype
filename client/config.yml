@@ -1,5 +1,5 @@
-recipe_root: /Users/priyatam/Dev/github/facjure/poetroid
-content: /Users/priyatam/Dev/github/facjure/poetroid-public-poems
+recipe_root: /Users/priyatam/Dev/github/facjure/poetroid/client
+content: /Users/priyatam/Dev/github/facjure/poetroid-public-domain/poems
 routes:
     - js/controller.js
 
@@ -8,3 +8,5 @@ default_template: poem.mustache
 
 title: Discover Poetry Together
 
+version: 0.4
+build: 283
