@@ -1,26 +1,28 @@
 # Discover Poetry Together
 
-Curate, collect, and read poems from the public domain. From any device. For free.
+Curate, View, and Discover thousands of poems from the public domain. On any device. For free.
 
 ## Overview
 
 The poetroid platform consists of three parts: web, engine, and data.
 
-You're in the web--it's opensourced.
+Web: you're in it, and it's opensource.
 
-Data is currently [poems from the public domain](https://github.com/Facjure/poetroid-public-domain). Public domain should always be opensourced.
+Engine: is not opensourced yet, and runs on the cloud as a distributed server. It's written in Clojure.
 
-The engine, not opensourced yet, runs on the cloud as a distributed server.
+Data: is opensource, and is available as [poetrid-public-domain](https://github.com/Facjure/poetroid-public-domain).
 
-There is no mobile: [responsive web design](http://en.wikipedia.org/wiki/Responsive_web_design) _is_ mobile.
+There is no mobile: [Responsive Web Design](http://en.wikipedia.org/wiki/Responsive_web_design) _is_ mobile.
 
 ## Status and Roadmap
 
-Prototyping. Currently in *Research & Development*.
+Prototyping / R&D.
 
-The current [web](http://www.poetroid.com) is a static site, with in-built regex search, hosting 2000 poems. Editors can add, edit, and curate tags and metadata via an inline markdown editor with live-preview. The site automatically updates via a github-hook that routes to [literatti](https://github.com/Facjure/literatte) compiler running on the cloud.
+[Here you go](http://www.poetroid.com).
 
-Once the engine is ready for alpha, the _web_ will be rewritten in clojurescript.
+Currently, a static site with in-built regex search hosts ~2000 poems, handcrafted one poem at a time. All poems are saved in github. Editors can add, edit, and curate tags and metadata via an inline Markdown editor with live-preview. Any changes are refreshed automatically via a github-hook that routes to [Literatti](https://github.com/Facjure/literatte), our compiler running on the cloud, and rebuilds the site.
+
+Once the engine is ready the _web_ will be rewritten, along with new features, in Clojurescript.
 
 ## Usage
 
