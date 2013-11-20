@@ -1,16 +1,16 @@
 # Discover Poetry Together
 
-Curate, View, and Discover thousands of poems from the public domain. On any device. For free.
+Curate, View, and Discover thousands of poems from the public domain. From any device.
 
 ## Overview
 
 The poetroid platform consists of three parts: web, engine, and data.
 
-Web: you're in it, and it's opensource.
+Web: you're in it.
 
 Engine: is not opensourced yet, and runs on the cloud as a distributed server. It's written in Clojure.
 
-Data: is opensource, and is available as free poems in [poetrid-public-domain](https://github.com/Facjure/poetroid-public-domain).
+Data: is available as free poems in [poetrid-public-domain](https://github.com/Facjure/poetroid-public-domain).
 
 There is no mobile: [Responsive Web Design](http://en.wikipedia.org/wiki/Responsive_web_design) _is_ mobile.
 
@@ -20,9 +20,9 @@ Prototyping / R&D.
 
 [Here you go](http://www.poetroid.com).
 
-Currently, a static site with in-built regex search hosts ~2000 poems, handcrafted one poem at a time. All poems are saved in github. Editors can add, edit, and curate tags and metadata via an inline Markdown editor with live-preview. Any changes are refreshed automatically via a github-hook that routes to [Literatti](https://github.com/Facjure/literatte), our compiler running on the cloud, and rebuilds the site.
+Currently, a static site with in-built search hosts ~2000 poems, handcrafted one poem at a time. All poems are versioned in github. Editors can add, edit, and curate tags and metadata via an inline Markdown editor with live-preview. Any changes are refreshed automatically via a github-hook that routes to [Literatti](https://github.com/Facjure/literatte), our compiler running on the cloud, that rebuilds the site.
 
-Once the engine is ready the _web_ will be rewritten, along with new features, in Clojurescript.
+Once the engine is ready the _web_ will be rewritten, along with new features.
 
 ## Usage
 
