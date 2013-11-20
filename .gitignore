@@ -1,3 +1,5 @@
+.config.yml
+
 scraper/
 .nrepl-port
 .lein-repl-history
