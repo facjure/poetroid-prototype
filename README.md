@@ -20,7 +20,7 @@ This work is being done in parallel to [literatti](https://github.com/Facjure/li
 
 Coming soon.
 
-# Contributers
+## Contributers
 
 - Priyatam Mudivarti: writer, engineer, and founder of Facjure LLC
 - Sreeharsha Mudivarti: musician, engineer, and survivor of a space ship crash.
