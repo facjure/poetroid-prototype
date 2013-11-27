@@ -1,6 +1,6 @@
 # Discover Poetry Together
 
-Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans, even machines, can't search them in a central library.
+Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans, even machines, can't find, interact, and discover more poetry in a central library.
 
 Let's build one.
 
