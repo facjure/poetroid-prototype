@@ -1,4 +1,5 @@
-# Discover Poetry Together
+Poetroid - Prototype
+====================
 
 Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans, even machines, can't find, interact, and discover more poetry in a central library.
 
@@ -6,23 +7,7 @@ Let's build one.
 
 ## Overview
 
-Poetroid = search engine + tools for curation + humachine learning
-
-Three parts: web, engine, and data.
-
-1. Web: you're in it.
-2. Engine: runs on the cloud as a distributed server.
-3. Data: poems; public domain poems are available from [poetrid-public-domain](https://github.com/Facjure/poetroid-public-domain) library.
-
-## Status
-
-Prototyping / R&D.
-
-An [early protoype](http://www.poetroid.com) without the engine.
-
-## Usage
-
-Built with [Literatti](https://github.com/Facjure/literatte).
+An [early protoype](http://www.poetroid.com) for [Poetroid](https://github.com/poetroid/wiki).
 
 ## Copyright & License
 
