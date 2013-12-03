@@ -7,6 +7,8 @@ Let's build one.
 
 ## Overview
 
+Poetroid = open data + search engine + editing tools + human learning
+
 An [early protoype](http://www.poetroid.com) for [Poetroid](https://github.com/poetroid/wiki).
 
 ## Copyright & License
