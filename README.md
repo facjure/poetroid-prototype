@@ -9,7 +9,7 @@ Let's build one.
 
 Poetroid = open data + search engine + editing tools + human learning
 
-An [early protoype](http://www.poetroid.com) for [Poetroid](https://github.com/poetroid/wiki).
+A working [protoype](http://www.poetroid.com) with 1500 poems. No server.
 
 ## Copyright & License
 
