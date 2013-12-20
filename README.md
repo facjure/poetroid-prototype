@@ -1,27 +1,25 @@
 Poetroid - Prototype
 ====================
 
-A working prototype of the Poetroid platform to demonstrate how we can, together, curate, discover, tag, collect, and read poetry on _any_ device. You can also distribute the "app" as a single file through email or a Dropbox. No software to install, no logins, no Amazon or Apple or Apps to download.
-
-Poetry in your palms.
+A prototype of the Poetroid platform: curate, discover, tag, collect, and read poetry on _any_ device.
 
 ## Abstract
 
-Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans, even machines, can't find, interact, and discover more poetry in a central library.
+Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans--even machines, can't find, discover, or interact with poems in a central library.
 
-To build an open web platform for discovering poetry together, we must think like a modern browser:
+To build an open web platform we must think like a modern browser and a distributed server:
 
-1. What is the format for writing a poem and its metadata on the browser?
-2. How can we build a search engine as an intellgient social server accessbile on the browser?
-3. How can publishers access a restful api to integrate the poems into their apps, books, and magazines?
+1. What is the format for writing a poem and its metadata?
+2. How can we build collective intelligence with a search engine and a responsive web?
+3. How can publishers access apis to integrate poems into their own collections and chapbooks?
 
-In other words, How can editors and poets and typographers collaborate with each other on an open platform to curate, discover, and share a million poems, together?
+How can editors and poets and typographers collaborate with each other on an open platform to curate, discover, and share a million poems together?
 
 ## Status & Roadmap
 
-This is a prototype only.
+This is a prototype (no server) only.
 
-A platform with a base of 100,000 poems and open tools to discover poetry together is being developed in Clojure/Clojurescript/CSS3.
+A platform with a base of 100,000 poems and an intelligent search engine is being developed in Clojure & Clojurescript.
 
 ## Copyright & License
 
