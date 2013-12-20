@@ -1,0 +1,19 @@
+---
+title: Untitled
+author: Basho 
+curator: Ata
+country: Japan
+year: 17th century 
+book: 
+gender: male
+tags: 
+-  haiku
+-  grass
+-  life
+-  image
+-  memory
+---
+Here, where a thousand
+captains swore grand conquest...
+tall grass their monument
+

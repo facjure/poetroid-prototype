@@ -1,0 +1,25 @@
+---
+title: XVII.
+author: Emily Dickinson
+curator: Ata
+country: America
+year: 19th century
+book: 
+gender: female
+tags: 
+-  sea
+-  God
+-  heaven
+-  lyric
+-  
+---
+I never saw a moor,
+I never saw the sea;
+Yet know I how the heather looks,
+And what a wave must be.
+
+I never spoke with God,
+Nor visited in heaven;
+Yet certain am I of the spot
+As if the chart were given.
+

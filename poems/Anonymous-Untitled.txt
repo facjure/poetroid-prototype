@@ -1,0 +1,19 @@
+---
+title: Untitled
+author: Anonymous
+curator: Ata
+country: Japan
+year: 
+book: 
+gender: 
+tags: 
+-  haiku
+-  nature
+-  wind
+-  meditative
+-  lyric
+---
+Death-song: leaf alone,
+fluttering alas, leaf alone, fluttering...
+floating down the wind 
+

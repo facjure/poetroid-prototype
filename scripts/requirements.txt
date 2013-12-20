@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 python-dateutil
 flask
 boto
 PyYaml
+=======
+markdown
+PyYaml
+pystache
+beautifulsoup4
+pytest
+
+>>>>>>> poems-prototype

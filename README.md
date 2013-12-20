@@ -1,11 +1,9 @@
 Poetroid - Prototype
 ====================
 
-A working prototype of the Poetroid platform to demonstrate how we can, together, curate, discover, retrieve, tag, search, and read poetry on _any_ device with a modern browser.
+A working prototype of the Poetroid platform to demonstrate how we can, together, curate, discover, tag, collect, and read poetry on _any_ device.
 
-You can even distribute the "app" as a single file via email or dropbox.
-
-No software to install. No logins. No Amazon. No DRM. No Apple. No Appstore. No apps.
+You can also distribute the "app" as a single file through email or a Dropbox. No software to install, no logins, no Amazon or Apple or appstores or apps to download.
 
 All your poety in your palms.
 
@@ -13,13 +11,13 @@ All your poety in your palms.
 
 Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans, even machines, can't find, interact, and discover more poetry in a central library.
 
-To build an open platform for discovering poetry together on the web, we must think like a modern browser:
+To build an open web platform for discovering poetry together, we must think like a modern browser:
 
 1. What is the format for writing a poem and its metadata on the browser?
 2. How can we build a search engine as an intellgient social server distributed to the browser?
-3. How can publishers access and integrate these poems into their apps, books, and magazines?
+3. How can publishers access and integrate these poems into their apps, books, and magazines from the browser?
 
-In other words: **How can editors and poets and typographers collaborate with each other on an open platform to curate, discover, and share a million poems, together?**
+In other words, How can editors and poets and typographers collaborate with each other on an open platform to curate, discover, and share a million poems, together?
 
 ## Status & Roadmap
 

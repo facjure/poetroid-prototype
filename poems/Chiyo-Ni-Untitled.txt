@@ -1,0 +1,19 @@
+---
+title: Untitled
+author: Chiyo-Ni
+curator: Ata
+country: Japan
+year: 18th century
+book: 
+gender: female
+tags: 
+-  haiku
+-  nature
+-  soul
+-  vine
+-  image
+---
+Quite a hundred gourds
+sprouting from the fertile soul...
+of a single vine
+

@@ -1,0 +1,24 @@
+---
+title: XXVI.
+author: Emily Dickinson
+curator: Ata
+country: America
+year: 19th century
+book: 
+gender: female
+tags: 
+-  swimming
+-  God
+-  face
+-  eyes
+-  lyric
+---
+Two swimmers wrestled on the spar
+Until the morning sun,
+When one turned smiling to the land.
+O God, the other one!
+
+The stray ships passing spied a face
+Upon the waters borne,
+With eyes in death still begging raised,
+And hands beseeching thrown.

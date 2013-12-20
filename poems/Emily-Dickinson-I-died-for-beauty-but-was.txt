@@ -1,0 +1,29 @@
+---
+title: X.
+author: Emily Dickinson 
+curator: Ata
+country: America
+year: 19th century
+book: 
+gender: female
+tags: 
+-  beauty
+-  death
+-  tomb
+-  lyric
+-  lips
+---
+I died for beauty, but was scarce
+Adjusted in the tomb,
+When one who died for truth was lain
+In an adjoining room.
+
+He questioned softly why I failed?
+"For beauty," I replied.
+"And I for truth, — the two are one;
+We brethren are," he said.
+
+And so, as kinsmen met a night,
+We talked between the rooms,
+Until the moss had reached our lips,
+And covered up our names.

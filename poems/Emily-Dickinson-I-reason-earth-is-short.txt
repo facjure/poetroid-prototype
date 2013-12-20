@@ -1,0 +1,30 @@
+---
+title: XXIII.
+author: Emily Dickinson
+curator: Ata
+country: America
+year: 19th century
+book: 
+gender: female
+tags: 
+-  reason
+-  anguish
+-  lyric
+-  heaven
+-  meditative
+---
+I reason, earth is short,
+And anguish absolute,
+And many hurt;
+But what of that?
+
+I reason, we could die:
+The best vitality
+Cannot excel decay;
+But what of that?
+
+I reason that in heaven
+Somehow, it will be even,
+Some new equation given;
+But what of that?
+

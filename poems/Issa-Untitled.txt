@@ -1,0 +1,20 @@
+---
+title: Untitled 
+author: Issa
+curator: Ata
+country: Japan
+year: 18th/19th century
+book: 
+gender: male
+tags: 
+-  haiku
+-  sad
+-  death
+-  nature
+-  image
+---
+A saddening world:
+flowers whose sweet
+blooms must fall...
+as we too, alas...
+

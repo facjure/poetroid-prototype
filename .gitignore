@@ -1,11 +1,7 @@
 scripts/config.yml
 
 scraper/
-.nrepl-port
-.lein-repl-history
 
-target/
-*.class
 
 recipe/styles/_*
 *.py[cod]
@@ -16,8 +12,6 @@ config.me.yml
 deploy
 .build
 out
-recipe.old
-
 .sass-cache
 
 .DS_Store
@@ -30,8 +24,6 @@ build
 *.iml
 *.log
 
-# C extensions
-*.so
 
 # Packages
 *.egg
@@ -50,16 +42,10 @@ __pycache__
 # Installer logs
 pip-log.txt
 
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
-htmlcov
 
-# Translations
-*.mo
 
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
+*.sh
+.DS_Store
+site/.build
+dumps/
+

@@ -1,0 +1,26 @@
+---
+title: Ode to Autumn Stanza 3
+author: John Keats
+curator: Ata
+country: England
+year: 18th/19th century
+book: 
+gender: male
+tags: 
+-  season
+-  music
+-  nature
+-  weather
+-  romantic
+---
+Where are the songs of Spring? Ay, where are they?
+Think not of them, thou hast thy music too,—
+While barred clouds bloom the soft-dying day,
+And touch the stubble-plains with rosy hue;
+Then in a wailful choir the small gnats mourn
+Among the river sallows, borne aloft
+Or sinking as the light wind lives or dies;
+And full-grown lambs loud bleat from hilly bourn;
+Hedge-crickets sing; and now with treble soft
+The red-breast whistles from a garden-croft;
+And gathering swallows twitter in the skies.

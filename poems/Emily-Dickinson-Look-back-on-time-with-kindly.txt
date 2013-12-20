@@ -1,0 +1,20 @@
+---
+title: VIII.
+author: Emily Dickinson
+curator: Ata
+country: America
+year: 19th century
+book: 
+gender: female
+tags: 
+-  eyes
+-  lyric
+-  west
+-  lyric
+-  sun
+---
+Look back on time with kindly eyes,
+He doubtless did his best;
+How softly sinks his trembling sun
+In human nature's west!
+
