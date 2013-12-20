@@ -1,9 +1,0 @@
-### DO NOT MODIFY THIS FILE: CREATE A COPY AND RENAME FILE AS config.yml  ###
-### YOUR NEW COPY IS IGNORED BY GIT AND PRIVATE                           ###
-
-BUCKET_NAME: 'CHANGE-ME'
-
-# local paths
-poetroid: ".../facjure/poetroid/client"
-poems: ".../facjure/poetroid-public-poems/poems"
-frozen_pie: ".../facjure/literatte/pie"
