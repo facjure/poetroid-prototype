@@ -1,5 +1,5 @@
 title: Poetroid - Discover Poetry Together
-first_page: blog
+first_page: main
 default_template: poem.mustache
 version: 0.4
 build: 285
