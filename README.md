@@ -1,25 +1,25 @@
 Poetroid - Prototype
 ====================
 
-A prototype of the Poetroid platform: curate, discover, tag, collect, and read poetry on _any_ device.
+A prototype of the Poetroid platform: Discover Poetry Together.
 
 ## Abstract
 
 Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans--even machines, can't find, discover, or interact with poems in a central library.
 
-To build an open web platform we must think like a modern browser and a distributed server:
+An open web platform should talk to a modern browser and a distributed server. In addition, it must ask the following questions:
 
 1. What is the format for writing a poem and its metadata?
-2. How can we build collective intelligence with a search engine and a responsive web?
-3. How can publishers access apis to integrate poems into their own collections and chapbooks?
-
-How can editors and poets and typographers collaborate with each other on an open platform to curate, discover, and share a million poems together?
+2. How do poets search and discover more poems with a unified api?
+3. How can text be adapted in response to screen size and resolution on any device?
+4. Finally, how do independent publishers consume and curate poems with Poetroid?
+5. And more ...
 
 ## Status & Roadmap
 
-This is a prototype (no server) only.
+This is a clientside prototype with 1500, hand-curated poems by poet, [Ata Moharreri](https://twitter.com/AtaMoharreri). It's a static site generated with our toolkit: [Literatte](https://github.com/Facjure/literatte).
 
-A platform with a base of 100,000 poems and an intelligent search engine is being developed in Clojure & Clojurescript.
+For the real platform, a server with 100,000 poems and an elasticsearch engine is being developed in Clojure.
 
 ## Copyright & License
 
