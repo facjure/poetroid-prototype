@@ -1,3 +1,3 @@
-lit.py /Users/priyatam/Dev/github/facjure/poetroid/client/ /Users/priyatam/Dev/github/facjure/poetroid/client/poems
+lit.py /Users/priyatam/Dev/github/poetroid/prototype /Users/priyatam/Dev/github/poetroid/prototype/poems
 
 open -a "/Applications/Google Chrome.app" site/index.html
