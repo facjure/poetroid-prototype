@@ -1,6 +1,5 @@
 title: Poetroid - Discover Poetry Together
 first_page: blog
 default_template: poem.mustache
-
 version: 0.4
 build: 285
