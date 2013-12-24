@@ -26,8 +26,10 @@ def stats(text):
     authors = []
 
     for poem in contents:
-        name  = poem.get("name", "")
-        if re.search(r'^content/', name):
+        name = poem.get("name", "")
+        print name
+        if re.search(r'^_poems/', name):
+            print name
             # actually a poem
             poems_count += 1
             author = poem.get("author", "Unknown")
@@ -35,8 +37,11 @@ def stats(text):
                 authors.append(author)
 
     unique_authors = len(set(authors))
+    print unique_authors
     stats['poems_count'] = poems_count
+    print poems_count
     stats['authors_count'] = unique_authors
+    print unique_authors
     stats['version'] = config['version']
     stats['build'] = config['build']
     return renderer.render(text,stats)

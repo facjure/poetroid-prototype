@@ -1,7 +1,6 @@
 $( function () {
 
     // SammyJs
-
     $('.nav li a').on('click', function() {
         $(this).parent().parent().find('.active').removeClass('active');
         $(this).parent().addClass('active');
@@ -228,10 +227,7 @@ $( function () {
             }
 
             $("#main").html(data[i]['html'])
-            // resize typography
-            $("#poem").fitText(1.2, { minFontSize: '14px', maxFontSize: '28px' })
-            $("#poem-listing").fitText(1.1, { minFontSize: '10px', maxFontSize: '20px' })
-        });
+         });
 
         this.get("", function (context) {
             render_search()

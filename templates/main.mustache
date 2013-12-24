@@ -15,17 +15,14 @@ _type: dynamic
     <form class="form-inline" id="home-search" role="form" action="#/search" method="GET">
         <input type="text" name="query" id="query" class="form-control input-xlarge" placeholder="Search poems by author, title, or metadata like tag: dark">
     </form>
-    {{#stats}}
-    <p class="text-center clearfix"> serving <strong>{{poems_count}}</strong> poems by <strong>{{authors_count}}</strong> authors, from the public domain.</p>
-    <p class="text-center clearfix">{{version}}.{{build}}</p>
-    {{/stats}}
-    </p>
   </div>
 </div>
 
 <div id="stats" class="row top-buffer-extra">
    <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-    <p id="poem-listing" class="text-center"> Click <a href="#/editor">here</a> to login if you're an approved editor.<p>
+    {{#stats}}
+      <h5 class="text-center clearfix"> serving <strong>{{poems_count}}</strong> poems by <strong>{{authors_count}}</strong> authors, from the public domain.</h5>
+    {{/stats}}
   </div>
 </div>
 
