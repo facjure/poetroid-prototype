@@ -1,30 +1,28 @@
 Poetroid - Prototype
 ====================
 
-A prototype of the Poetroid platform: Discover Poetry Together.
+A prototype to curate, search, and discover poetry from the public domain.
 
 ## Abstract
 
-Thousands of poems live buried in websites. Hundreds of literary magazines archive thousands more that go undiscovered. Humans--even machines, can't find, discover, or interact with poems in a central library.
+A million poems live buried in the public domain. Hundreds of literary magazines archive thousands more that go undiscovered. Humans—even machines, can't curate, annotate, and interact with poems in a central library.
 
-An open web platform should talk to a modern browser and a distributed server. In addition, it must ask the following questions:
+Let's build one.
 
-1. What is the format for writing a poem and its metadata?
-2. How do poets search and discover more poems with a unified api?
-3. How can text be adapted in response to screen size and resolution on any device?
-4. Finally, how do independent publishers consume and curate poems with Poetroid?
-5. And more ...
+## Usage
 
-## Status & Roadmap
+This is a prototype written in Python, Javascript, and Bootstrap, compiled statically and linked with an embedded router to search and read 1500 curated poems by poet, [Ata Moharreri](https://twitter.com/AtaMoharreri).
 
-This is a clientside prototype with 1500, hand-curated poems by poet, [Ata Moharreri](https://twitter.com/AtaMoharreri). It's a static site generated with our toolkit: [Literatte](https://github.com/Facjure/literatte).
+To run, read how compile static sites with [frozen-pile](https://github.com/priyatam/frozen-pie).
 
-For the real platform, a server with 100,000 poems and an elasticsearch engine is being developed in Clojure.
+## Roadmap
+
+This is just the beginning.
+
+A real publishing [Platform as a Service](http://en.wikipedia.org/wiki/Platform_as_a_service) with 100,000 poems and more is being developed in Clojure & Clojurescript, _as_ Poetroid.
 
 ## Copyright & License
 
-Copyright (c) Facjure LLC. All rights reserved.
+&copy; Facjure LLC, 2014.
 
-The use and distribution terms for this software are covered by [Eclipse Plugin License v 1.0](http://opensource.org/licenses/eclipse-1.0.php), which can be found in the file LICENSE at the root of this distribution.
-
-By using this software in any fashion, you are agreeing to be bound by the terms of this license. You must not remove this notice, or any other, from this software.
+Released under Apache License, v 2.0. See LICENSE for more details.
