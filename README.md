@@ -13,7 +13,7 @@ Let's build one.
 
 This is a prototype written in Python, Javascript, and Bootstrap, compiled statically and linked with an embedded router to search and read 1500 curated poems by poet, [Ata Moharreri](https://twitter.com/AtaMoharreri).
 
-To run, read how compile static sites with [frozen-pile](https://github.com/priyatam/frozen-pie).
+To run, read how to compile and build static sites and routes with [frozen-pie](https://github.com/priyatam/frozen-pie).
 
 ## Roadmap
 
