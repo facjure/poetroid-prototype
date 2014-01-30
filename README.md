@@ -1,7 +1,7 @@
 Poetroid - Prototype
 ====================
 
-A prototype to curate, search, and discover poetry from the public domain.
+A prototype to curate, search, and display poetry from the public domain.
 
 ## Abstract
 
@@ -13,13 +13,15 @@ Let's build one.
 
 This is a prototype written in Python, Javascript, and Bootstrap, compiled statically and linked with an embedded router to search and read 1500 curated poems by poet, [Ata Moharreri](https://twitter.com/AtaMoharreri).
 
+Forget epubs format--1500 poems are served in a **single** html file as an "embeddable app".
+
 To run, read how to compile and build static sites and routes with [frozen-pie](https://github.com/priyatam/frozen-pie).
 
 ## Roadmap
 
-This is just the beginning.
+This is a prototype only; it proves that a common poetry format like [zenup](https://github.com/poetroid/zenup) can serve as a means to curate and render hundreds of poems in a single, responsive page.
 
-A real publishing [Platform as a Service](http://en.wikipedia.org/wiki/Platform_as_a_service) with 100,000 poems and more is being developed in Clojure & Clojurescript, _as_ Poetroid.
+For more details of the implications, check out the roadmap of [Poetroid](https://github.com/poetroid).
 
 ## Copyright & License
 
