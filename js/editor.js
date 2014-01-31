@@ -133,6 +133,7 @@ function bind_typeahead() {
             window.ALL_PATHS = _.map(window.LAST_COMMIT, function (e) {
                 var value = e.path
                 var name = e.path.replace(/\..+$/, "").replace(/-/g, " ")
+                var name = name.replace(/^poems\//, "")
                 return { "value": name, "name": value }
             })
         }
@@ -165,7 +166,7 @@ function login() {
     window.AUTH = new FirebaseSimpleLogin(window.FBREF, function(error, user) {
         if (!window.LOGGED_IN) { //double login problem
             if (error) {
-                set_error_status("login Failed")
+                set_error_status("login failed")
             }
             else if (user) {
                 window.LOGGED_IN = true
@@ -175,11 +176,17 @@ function login() {
                     "auth": "oauth"
                 })
 
-                window.REPO = window.GH.getRepo("Facjure", "poems")
+                window.REPO = window.GH.getRepo("Facjure", "poetroid-poems")
                 window.REPO.getTree('master?recursive=true', function(err, tree) {
-                    window.LAST_COMMIT = tree
-                    if ($("#editor-search").length > 0) {
-                        bind_typeahead()
+                    if (err && err.error == 404) {
+                        console.log(err)
+                        set_error_status("login failed : not authorized by github")
+                    }
+                    else {
+                        window.LAST_COMMIT = tree
+                        if ($("#editor-search").length > 0) {
+                            bind_typeahead()
+                        }
                     }
                 })
             }
