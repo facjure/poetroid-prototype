@@ -27,4 +27,4 @@ For more details of the implications, check out the roadmap of [Poetroid](https:
 
 &copy; Facjure LLC, 2014.
 
-Released under Apache License, v 2.0. See LICENSE for more details.
+Licensed under Eclipse Public License 1.0. See LICENSE for more details.
