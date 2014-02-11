@@ -1,27 +1,25 @@
 Poetroid - Prototype
 ====================
 
-A prototype to curate, search, and display poetry from the public domain.
+A prototype to search, navigate, and show hundreds of poems from any modern browser without any server, database, or framework.
 
-## Abstract
+It's just a single html page.
 
-A million poems live buried in the public domain. Hundreds of literary magazines archive thousands more that go undiscovered. Humans—even machines, can't curate, annotate, and interact with poems in a central library.
+## Goal
 
-Let's build one.
+Without using a cms, epub, pdf, and mobile app frameworks, render hundreds of poems in a single, responsive page. In addition, describe a [common data format](https://github.com/poetroid/zenup), an editorial workflow, and one-click hosting.
 
 ## Usage
 
-This is a prototype written in Python, Javascript, and Bootstrap, compiled statically and linked with an embedded router to search and read 1500 curated poems by poet, [Ata Moharreri](https://twitter.com/AtaMoharreri).
+This is an early prototype written in Python, Javascript, and Bootstrap using our toolkit, [frozen pie](https://github.com/priyatam/frozen-pie). It compiles all poems, analyzes metadata, builds  static routers, adds simple search, and transforms the poems into responsive templates.
 
-Forget epubs format--1500 poems are served in a **single** html file as an "embeddable app".
-
-To run, read how to compile and build static sites and routes with [frozen-pie](https://github.com/priyatam/frozen-pie).
+All 1500 curated poems were curated by poet, [Ata Moharreri](https://twitter.com/AtaMoharreri).
 
 ## Roadmap
 
-This is a prototype only; it proves that a common poetry format like [zenup](https://github.com/poetroid/zenup) can serve as a means to curate and render hundreds of poems in a single, responsive page.
+This is a prototype only.
 
-For more details of the implications, check out the roadmap of [Poetroid](https://github.com/poetroid).
+For more details, check out the roadmap of [Poetroid](https://github.com/poetroid).
 
 ## Copyright & License
 
