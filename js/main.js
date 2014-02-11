@@ -265,14 +265,14 @@ $( function () {
 
     });
 
-     // flowtype typography
+    // flowtype
     $('body').flowtype({
         minimum   : 500,
         maximum   : 1600,
-        minFont   : 12,
-        maxFont   : 40,
+        minFont   : 10,
+        maxFont   : 28,
         fontRatio : 30,
-        lineRatio : 1.45
+        lineRatio : 1.20
     });
 
     app.run();
