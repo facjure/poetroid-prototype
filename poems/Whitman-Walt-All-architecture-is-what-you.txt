@@ -1,0 +1,17 @@
+---
+title: A Song for Occupations Lines 92-93
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - building
+ - introspective
+ - philosophical
+ - design
+ - stone
+---
+
+All architecture is what you do to it when you look upon it;
+Did you think it was in the white or gray stone? or the elides of the arches and the cornices? 

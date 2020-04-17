@@ -1,0 +1,25 @@
+---
+title: The Sleepers 20-26
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - feet
+ - philosophical
+ - time
+ - child
+ - humanity
+ - introspective
+---
+
+The female that loves unrequited sleeps,
+And the male that loves unrequited sleeps;
+The head of the moneymaker that plotted all day sleeps, 
+And the enraged and treacherous dispositions sleep. 
+
+I stand with drooping eyes by the worstsuffering and restless,
+I pass my hands soothingly to and fro a few inches from them;
+The restless sink in their beds… they fitfully sleep.

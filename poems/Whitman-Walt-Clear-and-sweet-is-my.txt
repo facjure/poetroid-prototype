@@ -1,0 +1,27 @@
+---
+title: Song of Myself Lines 44-50
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - age
+ - soul
+ - time
+ - organs
+---
+
+Clear and sweet is my soul… and clear and sweet is all that is not my soul.
+
+Lack one lacks both… and the unseen is proved by the seen, 
+Till that becomes unseen and receives proof in its turn. 
+
+Showing the best and dividing it from the worst, age vexes age, 
+Knowing the perfect fitness and equanimity of things, while they discuss I am silent, and go bathe and admire myself.
+
+Welcome is every organ and attribute of me, and of any man hearty and clean, 
+Not an inch nor a particle of an inch is vile, and none shall be less familiar than the rest. 

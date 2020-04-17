@@ -1,0 +1,42 @@
+---
+title: Song of Myself Lines 401-421
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - time
+ - genial
+---
+
+In all people I see myself, none more and not one a barleycorn less, 
+And the good or bad I say of myself I say of them.
+
+And I know I am solid and sound,
+To me the converging objects of the universe perpetually flow, 
+All are written to me, and I must get what the writing means. 
+
+And I know I am deathless, 
+I know this orbit of mine cannot be swept by a carpenter's compass, 
+I know I shall not pass like a child's curlicue cut with a burnt stick at night. 
+
+I am know I am august, 
+I do not trouble my spirit to vindicate itself or be understood, 
+I see that the elementary laws never apologize, 
+I reckon I behave no prouder than the level I plant my house by after all. 
+
+I exist as I am, that is enough, 
+If no other in the world be aware I sit content, 
+And if each and all be aware I sit content. 
+
+One world is aware, and by far the largest to me, and that is myself, 
+And whether I come to my own today or in ten thousand or ten million years, 
+I can cheerfully take it now, or with equal cheerfulness I can wait. 
+
+My foothold is tenoned and mortised in granite, 
+I laugh at what you call dissolution, 
+And I know the amplitude of time. 

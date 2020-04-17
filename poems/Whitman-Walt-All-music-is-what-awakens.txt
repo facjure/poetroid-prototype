@@ -1,0 +1,19 @@
+---
+title: A Song for Occupations Lines 94-96
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - music
+ - introspective
+ - philosophical
+ - violin
+ - drums
+ - singing
+---
+
+All music is what awakens from you when you are reminded by the instruments, 
+It is not the violins and the cornets… it is not the oboe nor the beating drums-- nor the notes of the baritone singer singing his sweet romans… nor those of the men's chorus, nor those of the women's chorus, 
+It is nearer and farther than they. 

@@ -1,0 +1,23 @@
+---
+title: A song for Occupations Lines 87-91
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - conversational
+ - introspective
+ - philosophical
+ - politics
+ - history
+ - ars poetic
+ - times
+---
+
+
+All doctrines, all politics and civilization exurge from you, 
+All sculpture and monuments and anything inscribed anywhere are tallied in you, 
+The gist of histories and statistics as far back as the records reach is in you this hour-- and myths and tales the same; 
+If you were not breathing and walking here where would they all be?
+The most renowned poems would be ashes… orations and plays would be vacuums. 

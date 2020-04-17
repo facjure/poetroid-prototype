@@ -1,0 +1,23 @@
+---
+title: Song of Myself Lines 388-392
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - time
+ - beef
+ - interrogative 
+---
+
+Who goes there! Hankering, gross, mystical, nude?
+How is it I extract strength from the beef I eat?
+
+What is a man anyhow? What am I? and what are you? 
+All I mark as my own you shall offset it with your own, 
+Else it were time lost listening to me. 
+

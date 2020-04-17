@@ -1,0 +1,19 @@
+---
+title: Leave of Grass Lines 466-467
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - feet
+ - philosophical
+ - time
+ - child
+ - humanity
+ - introspective
+---
+
+I am the poet of commonsense and of the demonstrable and of immortality;
+And am not the poet of goodness only… I do not decline to be the poet of wickedness also. 

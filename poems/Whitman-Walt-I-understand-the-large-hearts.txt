@@ -1,0 +1,30 @@
+---
+title: Leave of Grass Lines 818-827 
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - heart
+ - philosophical
+ - night
+ - love
+ - humanity
+ - introspective
+ - conversational
+ - death
+ - sea
+---
+
+I understand the large hearts of heroes, 
+The courage of present times and all times;
+How the skipper saw the crowded and rudderless wreck of the steamship, and death chasing it up and down the storm, 
+How he knuckled tight and gave not back one inch, and was faithful of days and faithful of nights, 
+And chalked in large letters on a board, Be of good cheer, We will not desert you;
+How he saved the drifting company at last, 
+How the lank loose-gowned women looked when boated from the side of their prepared graves, 
+How the silent old-faced infants, and the lifted sick, and the sharp-lipped unshaven men;
+All this I swallow and it tastes good… I like it well, and it becomes mine,
+I am the man… I suffered… I was there. 

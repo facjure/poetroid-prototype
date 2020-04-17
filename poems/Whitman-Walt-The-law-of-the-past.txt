@@ -1,0 +1,24 @@
+---
+title: To Think of Time Lines 84-89
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - anaphora
+ - philosophical
+ - time
+ - drunk
+ - humanity
+ - hero
+ - sage 
+---
+
+The law of the past cannot be eluded,
+The law of the present and future cannot be eluded, 
+The law of the living cannot be eluded… it is eternal, 
+The law of promotion and transformation cannot be eluded,
+The law of heroes and good-doers cannot be eluded, 
+The law of drunkard and informers and mean persons cannot be eluded. 

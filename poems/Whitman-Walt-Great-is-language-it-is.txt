@@ -1,0 +1,21 @@
+---
+title: Great Are The Myths Lines 41-43
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - feet
+ - philosophical
+ - time
+ - child
+ - humanity
+ - introspective
+---
+
+Great is language… it is the mightiest of the sciences, 
+It is the fulness and color and form and diversity of the earth…
+and of men and women… and of all quantities and processes;
+It is greater than wealth… is is greater than buildings or ships or religions or paintings or music. 

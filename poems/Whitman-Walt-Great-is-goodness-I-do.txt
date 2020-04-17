@@ -1,0 +1,17 @@
+---
+title: Great Are The Myths Lines 59-60
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - genial
+ - philosophical
+ - lyric
+ - humanity
+ - introspective
+---
+
+Great is goodness;
+I do not know what it is any more than I know what health is… but I know it is great. 

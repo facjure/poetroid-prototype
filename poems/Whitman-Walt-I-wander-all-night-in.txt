@@ -1,0 +1,25 @@
+---
+title: The Sleepers 1-7
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - feet
+ - philosophical
+ - time
+ - child
+ - humanity
+ - introspective
+---
+
+I wander all night in my vision, 
+Stepping with light feet… swiftly and noiselessly stepping and stopping, 
+Bending with open eyes over the shut eyes of sleepers; 
+Wandering and confused… lost to myself… ill-assorted… contradictory,
+Pausing and gazing and bending and stopping. 
+
+How solemn they look there, stretched and still;
+How quiet they breathe, the little children in their cradles. 

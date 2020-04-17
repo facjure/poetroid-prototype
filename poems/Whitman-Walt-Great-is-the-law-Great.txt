@@ -1,0 +1,20 @@
+---
+title: Great Are The Myths Lines 48-49
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - law
+ - life
+ - philosophical
+ - genial
+ - marriage
+ - humanity
+ - introspective
+---
+
+Great is the law… Great are the old few landmarks of the law…
+they are the same in all time and shall not be disturbed. 
+Great are marriage, commerce, newspapers, books, freetrade, railroads, steamers, international mails and telegraphs and exchanges. 

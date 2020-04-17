@@ -1,0 +1,23 @@
+---
+title: The Sleepers 32-35
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - cache
+ - philosophical
+ - time
+ - moon
+ - genial
+ - introspective
+ - sea
+---
+
+I am a dance… Play up there! the fit is whirling me fast.
+
+I am the everlaughing… it is new moon and twilight, 
+I see the hiding of douceurs… I see nimble ghosts whichever way I look,
+Cache and cache again deep in the ground and sea, and where it is neither ground or sea. 

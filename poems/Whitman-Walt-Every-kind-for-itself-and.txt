@@ -1,0 +1,25 @@
+---
+title: Song of Myself Lines 130-135
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - anaphora
+ - children
+ - introspective
+ - philosophical
+ - genial
+ - eyes
+ - smile
+ - tears
+---
+
+Every kind for itself and its own… for me mine male and female, 
+For me all that have been boys and that love women, 
+For me the man that is proud and feels how it stings to be slighted, 
+For me the sweetheart and the old maid… for me the mothers and the mothers of mothers, 
+For me lips that have smiled, eyes that have shed tears, 
+For me children and the begetters of children. 

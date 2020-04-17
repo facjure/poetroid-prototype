@@ -1,0 +1,29 @@
+---
+title: A Song for Occupations Lines 171-178
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - love
+ - time
+ - university
+ - religion
+ - gold
+ - relationships
+ - anaphora
+ - simile 
+---
+
+When psalm sings instead of the singer,
+When the script preaches instead of the preacher, 
+When the pulpit descends and goes instead of the carver that carved the supporting desk, 
+When the sacred vessels or the bits of the eucharist, or the lath an plaits, procreate as effectually as the young silversmiths or baker, or masons in their overalls, 
+When a university course convinces like a slumbering woman and child convince, 
+When the minted gold in the vault smiles like the nightwatchman's daughter, 
+When the warrantee deeds loafe in chairs opposite and are my friendly companions, 
+I intend to reach them my hand and make as much of them as I do of men and women. 

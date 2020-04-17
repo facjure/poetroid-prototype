@@ -1,0 +1,21 @@
+---
+title: The Sleepers 42-45
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - lyric
+ - life
+ - philosophical
+ - humanity
+ - genial
+ - time
+ - introspective
+---
+
+I am the actor and the actress… the voter… the politician, 
+The emigrant and the exile… the criminal that stood in the box, 
+He who has been famous, and he who shall be famous after today, 
+The stammerer… the wellformed person… the wasted or feeble person. 

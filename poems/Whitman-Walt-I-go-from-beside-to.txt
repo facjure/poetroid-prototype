@@ -1,0 +1,17 @@
+---
+title: The Sleepers 31-32
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - sleep
+ - dream
+ - philosophical
+ - introspective
+---
+
+I go from bedside to bedside… I sleep close with the other sleepers, each in turn;
+I dream in my dream all the dreams of the other dreamers, 
+And I become the other dreamers. 

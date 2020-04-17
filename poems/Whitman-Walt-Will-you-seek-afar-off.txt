@@ -1,0 +1,27 @@
+---
+title: A Song For Occupations Lines 164-170
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - love
+ - time
+ - mother
+ - wife
+ - brother
+ - relationships
+ - neighbor
+ - genial 
+---
+
+Will you seek afar off? You surely come back at last, 
+In things best known to you finding the best or as good as the best, 
+In folks nearest to you finding also the sweetest and strongest and lovingest, 
+Happiness not in another place, but this place… not for another hour, but this hour, 
+Man in the first you see or touch… always in your friend or brother or neighbor… Woman in your mother or lover in wife,
+And all else thus far known giving place to men and women. 

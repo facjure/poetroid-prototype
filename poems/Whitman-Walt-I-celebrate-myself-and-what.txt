@@ -1,0 +1,23 @@
+---
+title: Song of Myself Lines 1-5
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - genial
+ - philosophical
+ - soul
+ - grass
+ - nature
+ - conversational
+---
+
+I celebrate myself, 
+And what I assume you shall assume, 
+For every atom belonging to me as good belongs to you.
+
+I loaf and invite my soul, 
+I lean and loaf at my ease… observing a spear of summer grass.

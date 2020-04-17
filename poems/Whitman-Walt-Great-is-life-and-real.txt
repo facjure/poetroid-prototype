@@ -1,0 +1,20 @@
+---
+title: Great Are The Myths Lines 65-67
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - death
+ - philosophical
+ - time
+ - stars
+ - humanity
+ - introspective
+---
+
+Great is life… and real and mystical… wherever and whoever, 
+Great is death… Sure as life holds all parts together, death holds all parts together; 
+Sure as the stars return again after they merge in the light, death is great as life. 

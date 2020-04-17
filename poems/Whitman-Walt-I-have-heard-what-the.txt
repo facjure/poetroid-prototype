@@ -1,0 +1,24 @@
+---
+title: Song of Myself Lines 29-35
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - age
+ - heaven
+ - time
+ - hell
+---
+
+I have heard what the talkers were talking… talk of the beginning and the end,
+But I do not talk of the beginning or the end. 
+
+There was never any more inception than there is now, 
+Nor any more youth or age than there is now;
+And will never be any more perfection than there is now,
+Nor any more heaven or hell than there is now. 

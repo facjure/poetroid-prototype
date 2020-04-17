@@ -1,0 +1,22 @@
+---
+title: Song of Myself Lines 122-129
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - death
+ - baby
+ - introspective
+ - philosophical
+ - stars
+ - nature
+---
+
+Has any one supposed it lucky to be born?
+I hasten to inform him or her it is just as lucky to die, and I know it.
+I pass death with the dying, and birth with the new-washed babe… and am not contained between my hat and boots, 
+And peruse manifold objects, no two alike, and every one good, 
+The earth good, and the stars good, and their adjuncts all good. 

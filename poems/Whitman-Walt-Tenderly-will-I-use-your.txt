@@ -1,0 +1,22 @@
+---
+title: Song of Myself Lines 101-106
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - philosophical
+ - nature
+ - introspective
+ - mother
+ - love
+ - grass
+---
+
+Tenderly will I use your curling grass, 
+It may be you transpire from the breasts of young men, 
+It may be if I had known them I would have loved them;
+It may be you are from old people and from women, and from offspring taken soon out of their mothers' laps, 
+And here you are the mothers' laps. 

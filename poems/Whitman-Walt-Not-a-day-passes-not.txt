@@ -1,0 +1,18 @@
+---
+title: To Think of Time Lines 10-11
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - anaphora
+ - time
+ - death
+---
+
+Not a day passes… not a minute or second without an accouchement;
+Not a day passes… not a minute or second without a corpse. 

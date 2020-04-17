@@ -1,0 +1,20 @@
+---
+title: To Think of Time Lines 24-25
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - anaphora
+ - time
+ - nature
+ - city
+ - country
+---
+
+To think that the rivers will come to flow, and the snow fall, and fruits ripen… and act upon others as upon us now… yet not act upon us;
+To think of all these wonders of city an country… and others taking great interest in them… and we taking small interest in them. 

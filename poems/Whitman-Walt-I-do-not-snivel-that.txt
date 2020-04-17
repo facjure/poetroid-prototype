@@ -1,0 +1,21 @@
+---
+title: Song of Myself Lines 392-395
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - life
+ - introspective
+ - philosophical
+ - time
+ - sad
+ - tears
+ - crying
+ - strength 
+---
+
+I do not snivel that snivel the world over, 
+That months are vacuums and the ground but wallow and filth, 
+That life is a suck and a sell, and nothing remains at the end but threadbare crape and tears. 

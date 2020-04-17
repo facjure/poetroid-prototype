@@ -1,0 +1,16 @@
+---
+title: Leaves of Grass Lines 795-796
+book: Leaves of Grass
+author: Walt Whitman
+gender: male
+year: 19th century
+country: America
+tags:
+ - God
+ - nature
+ - green
+ - introspective
+---
+
+I visit the orchards of God and look at the spheric product, 
+And look at quintillions ripened, and look at quintillions green. 
